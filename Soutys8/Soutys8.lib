@@ -1,0 +1,528 @@
+timestamp=1669554646930
+
+[~A]
+ModifyID=508
+Version=74
+
+[~MFT]
+0=0|0Soutys8.mgf|16537138|0
+1=0|1Soutys8.mgf|24654774|0
+2=0|2Soutys8.mgf|60594|0
+3=0|3Soutys8.mgf|39464|0
+
+[adder_16bit]
+A/adder_16bit=A/Adder_16bit 21|../src/Adder_16bit.vhd|36|1*0
+A/structure=21|../synthesis/top.vhd|380|1*819
+BinW64/adder_16bit=3*0
+I=0*16503303
+I/adder_16bit=I/Adder_16bit 0*16503670
+M=11|2|vef|1669482612170|../src/Adder_16bit.vhd|0*16400281*0x7478c80d1512b5bf0c4ff58e8afc03aabb8191a9|0*16400670*0x23b75c12e3e89f2ef000564498faa8c2
+M/adder_16bit=M/Adder_16bit 21|2|vef|1669482612174|../src/Adder_16bit.vhd|0*25996*0x473ef37dd6626956eb165b59d9d8a14a469c0982|0*26205*0x38da3f8d370884129c7d7736fd3d0c50
+M/structure=M/STRUCTURE 21|2|vef|1665249567087|../synthesis/top.vhd|0*37693*0xa588cf8b15cbd51ced98e101f0d97fcdb591ffaa|0*40490*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/adder_16bit=NSymbols/Adder_16bit 40|0|2*0
+R=../src/Adder_16bit.vhd|24
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|ea8895cb982c4489744eeaa95e4c4391b459a34271fef5c61ae439f42b37795a315342ac318166d6c6d3051191dad700
+Version/adder_16bit=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|ea8895cb982c4489744eeaa95e4c4391b459a34271fef5c61ae439f42b37795a315342ac318166d6c6d3051191dad700
+Version/structure=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|eab8953fe0a98340e036eda18bd6d669520908b071c9b2c5bba6c893b05fa68023ab73240803e99f18c274916d526c05
+
+[alu]
+A/alu=A/ALU 21|../src/ALU.vhd|42|1*6917
+A/structure=21|../synthesis/top.vhd|43|1*23379
+BinW64/alu=3*290
+I=0*16504324
+I/alu=I/ALU 0*16504683
+M=11|2|vef|1669482611046|../src/ALU.vhd|0*16395383*0xcb5383564109411bd83424704cf2ff273652cd68|0*16395925*0x23b75c12e3e89f2ef000564498faa8c2
+M/alu=M/ALU 21|2|vef|1669482611052|../src/ALU.vhd|0*7714*0xe48743430087baf3660bf4f3b1da902afe599f3d|0*17583*0x38da3f8d370884129c7d7736fd3d0c50
+M/structure=M/STRUCTURE 21|2|vef|1665249567064|../synthesis/top.vhd|0*30191*0xc5c61099638f5e3b68279079cf0b1b3e609e9342|0*37603*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/alu=NSymbols/ALU 40|0|2*2001
+R=../src/ALU.vhd|25
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|fdc9c85601beb4171a6a25c637e2168ec0859df917d2438c13258b4f712a6632
+Version/alu=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|fdc9c85601beb4171a6a25c637e2168ec0859df917d2438c13258b4f712a6632
+Version/structure=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|eab8953fe0a98340e036eda18bd6d669520908b071c9b2c5bba6c893b05fa680a84155e8b3bc74566393414340abdca5
+
+[alu_tb]
+A/tb_architecture=21|../src/testbench/ALU_tb.vhd|26|1*39513
+BinW64/tb_architecture=3*5939
+I=0*16505164
+I/tb_architecture=0*16505555
+M=11|2|vef|1669482612207|../src/testbench/ALU_tb.vhd|0*28513*0x173a03a915c0f07936621b477198c1b1bd382b3c|0*28821*0x23b75c12e3e89f2ef000564498faa8c2
+M/tb_architecture=21|2|vef|1669482612214|../src/testbench/ALU_tb.vhd|0*16400757*0x3223d127decd607383d2bcdb8c14b3478c11f7dd|0*16408082*0x38da3f8d370884129c7d7736fd3d0c50
+R=../src/testbench/ALU_tb.vhd|9
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|b5ca7ba7583dcb786be856c479ad2f648940fe12186b44a5346b88ddb1fc4314
+Version/tb_architecture=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534bea66581b3b54c577ad679ec82c5630411e
+
+[clock_prescaler]
+A/clock_prescaler=A/Clock_prescaler 21|../src/Clock_prescaler.vhd|33|1*46586
+A/structure=21|../synthesis/top.vhd|475|1*47660
+BinW64/clock_prescaler=3*9283
+I=0*16506199
+I/clock_prescaler=I/Clock_prescaler 0*16506524
+M=11|2|vef|1666717131286|../src/Clock_prescaler.vhd|0*16486957*0xeede9f3d19f233780848ed58b2259c4f67b3bf2d|0*16487269*0x23b75c12e3e89f2ef000564498faa8c2
+M/clock_prescaler=M/Clock_prescaler 21|2|vef|1669482611100|../src/Clock_prescaler.vhd|0*16487364*0xc0775c0f13bf065459fe404c6d95042e97340669|0*16487992*0x38da3f8d370884129c7d7736fd3d0c50
+M/structure=M/STRUCTURE 21|2|vef|1665249567105|../synthesis/top.vhd|0*40588*0x30d4abd0128029f13f70a8691b26132b1f32c10e|0*41151*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/clock_prescaler=NSymbols/Clock_Prescaler 40|0|2*5913
+R=../src/Clock_prescaler.vhd|23
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|e04d8b55477d557b5756e0096433840929843e247253bb1be55395c7c4b52d84faa0b7b5de68864e04601ef2f779e9a0
+Version/clock_prescaler=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|e04d8b55477d557b5756e0096433840929843e247253bb1be55395c7c4b52d843ebd2d68983c96acfc07b8a5b5a91e26
+Version/structure=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|eab8953fe0a98340e036eda18bd6d669520908b071c9b2c5bba6c893b05fa680e1d1caf298508d7d2148c416777879c4
+
+[constant_values]
+A/constant_values=21|../src/constant_values.vhd|34|1*50147
+BinW64/constant_values=3*9913
+I=0*16507068
+I/constant_values=0*16507392
+M=11|2|vef|1665133540923|../src/constant_values.vhd|0*17661*0x5d029a650ad38edb736708173b3e13bc3c3ca331|0*18004*0x23b75c12e3e89f2ef000564498faa8c2
+M/constant_values=21|2|vef|1669482611139|../src/constant_values.vhd|0*18099*0x0430ba4a1c720635b3904bf83cdd8a1215bb74a3|0*18355*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/constant_values=40|0|2*8585
+R=../src/constant_values.vhd|24
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|efb20040aad2d43879f1b4401a9dc24f607dff67496234f2a702421f96d1bb01d6af24c7c34e97ff57bb87285f61fba7
+Version/constant_values=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|efb20040aad2d43879f1b4401a9dc24f607dff67496234f2a702421f96d1bb011f4b2a107b8052e4dfca0830756759ee
+
+[control_unit]
+A/control_unit=A/Control_unit 21|../src/Control_unit.vhd|37|1*51060
+A/structure=21|../synthesis/top.vhd|534|1*72204
+BinW64/control_unit=3*10185
+I=0*16508007
+I/control_unit=I/Control_unit 0*16508375
+M=11|2|vef|1669482611178|../src/Control_unit.vhd|0*16395996*0x4153a90e39a6e279f43d89448aadb8f33a8e881f|0*16396450*0x23b75c12e3e89f2ef000564498faa8c2
+M/control_unit=M/Control_unit 21|2|vef|1669482611189|../src/Control_unit.vhd|0*16423996*0xbd37c51c5bdd8e4690ca177e30f16a9b7b738eef|0*16455094*0x38da3f8d370884129c7d7736fd3d0c50
+M/structure=M/STRUCTURE 21|2|vef|1665249567123|../synthesis/top.vhd|0*41253*0x9a05038754c52678e573e6bce3ece732e83e2159|0*59594*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/control_unit=NSymbols/Control_unit 40|0|2*10060
+R=../src/Control_unit.vhd|25
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|62cdd31518126521df66462af92a6d2b711b818d9a1b2ffa542e7c475ffbd8981ab698fc0ef67e26d9da567b6701cda1
+Version/control_unit=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|62cdd31518126521df66462af92a6d2b711b818d9a1b2ffa542e7c475ffbd89821dbbe261c273b447e72ef19a3b86f92
+Version/structure=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|eab8953fe0a98340e036eda18bd6d669520908b071c9b2c5bba6c893b05fa6808d41a037391c7fa840f3fcea185f4500
+
+[data_memory]
+A/data_memory=A/Data_memory 24|../src/Data_memory.bde|10000|1*105007
+A/structure=21|../synthesis/top.vhd|560505|1*110545
+I=0*16509083
+I/data_memory=I/Data_memory 0*16509378
+M=11|2|vef|1669482611263|../compile/Data_memory.vhd|0*16396539*0x2805d01c587d97a314297942adc3c0516a085dc5|0*16397285*0x23b75c12e3e89f2ef000564498faa8c2
+M/data_memory=M/Data_memory 21|2|vef|1669482611270|../compile/Data_memory.vhd|0*16488106*0x981ac3213e4458a5e573692cae8ceabed683aa60|0*16490520*0x38da3f8d370884129c7d7736fd3d0c50
+M/structure=M/STRUCTURE 21|2|vef|1665249570030|../synthesis/top.vhd|0*15820223*0x4ac55004d1b0b0c540da42bba2dde072ca91bf2f|0*16000621*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/data_memory=NSymbols/Data_memory 40|0|2*11895
+R=../compile/Data_memory.vhd|17
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|726284356dccaf29bb796a741e5c78b5503161ccddc43b92871758a951bfdd2ca8290b4c3a112c2901190eb037bb8715
+Version/data_memory=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|726284356dccaf29bb796a741e5c78b5503161ccddc43b92871758a951bfdd2ca8290b4c3a112c2901190eb037bb8715
+Version/structure=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|eab8953fe0a98340e036eda18bd6d669520908b071c9b2c5bba6c893b05fa68054d85c70a8cc569bdf529bb0fdeb8823
+
+[gpio]
+A/gpio=A/GPIO 21|../src/GPIO.vhd|122|1*482108
+A/structure=21|../synthesis/top.vhd|1404|1*489694
+BinW64/gpio=3*13852
+I=0*16510109
+I/gpio=I/GPIO 0*16510469
+M=11|2|vef|1669482611285|../src/GPIO.vhd|0*16392578*0x5b408fbc3d6324ef6bd96500160bf579eb9e0ede|0*16393124*0x23b75c12e3e89f2ef000564498faa8c2
+M/gpio=M/GPIO 21|2|vef|1669482611292|../src/GPIO.vhd|0*16455199*0xff3a38ce769973827ea78b6bf071acb45ed15152|0*16458023*0x38da3f8d370884129c7d7736fd3d0c50
+M/structure=M/STRUCTURE 21|2|vef|1665249567218|../synthesis/top.vhd|0*59693*0xdeecc4dee4dc5d17e35d1b5c82af0bc3707f5615|0*421890*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/gpio=NSymbols/GPIO 40|0|2*16794
+R=../src/GPIO.vhd|25
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|f190082b60e985a131774fc59f174115ac2d814b6584657ac6eb335b473a8b43
+Version/gpio=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|f190082b60e985a131774fc59f174115ac2d814b6584657ac6eb335b473a8b43
+Version/structure=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|eab8953fe0a98340e036eda18bd6d669520908b071c9b2c5bba6c893b05fa680000ec16449bab1dd34877c543a63c7b8
+
+[gpio_tb]
+A/tb_architecture=21|../src/testbench/GPIO_tb.vhd|26|1*1027337
+BinW64/tb_architecture=3*15981
+I=0*16510954
+I/tb_architecture=0*16511346
+M=11|2|vef|1669482612368|../src/testbench/GPIO_tb.vhd|0*29323*0x981986c001dabe6d84a0a3e1c28b1c34a1833729|0*29635*0x23b75c12e3e89f2ef000564498faa8c2
+M/tb_architecture=21|2|vef|1669482612381|../src/testbench/GPIO_tb.vhd|0*16412465*0xf6b4e454341e60c64ff7564ebfca25f9f42edea9|0*16414795*0x38da3f8d370884129c7d7736fd3d0c50
+R=../src/testbench/GPIO_tb.vhd|9
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|6fe01da2c3cffa92740cc962fa502f5726527262ddaa47cb266f3a3c4d9b973a3784c4ed9ebc1d6f402da643a6c35029
+Version/tb_architecture=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534beab27bdedb65f51101cb22c5a417612fbb
+
+[instruction_decoder]
+A/instruction_decoder=A/Instruction_decoder 21|../src/Instruction_decoder.vhd|44|1*1031601
+A/structure=21|../synthesis/top.vhd|16830|1*1048576
+BinW64/instruction_decoder=3*17232
+I=0*16512067
+I/instruction_decoder=I/Instruction_decoder 0*16512442
+M=11|2|vef|1669482611324|../src/Instruction_decoder.vhd|0*16397376*0x804c6b2d8ad52d7bd262f1c614b0d078cf689481|0*16398075*0x23b75c12e3e89f2ef000564498faa8c2
+M/instruction_decoder=M/Instruction_decoder 21|2|vef|1669482611334|../src/Instruction_decoder.vhd|0*16466135*0x7a9c1352b701a7ca99fda914ecfc7e6d3e7bbcb4|0*16486831*0x38da3f8d370884129c7d7736fd3d0c50
+M/structure=M/STRUCTURE 21|2|vef|1665249567497|../synthesis/top.vhd|0*421981*0x11adec88f93e6a4cb987716da92e8a191aa2cce5|0*1777958*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/instruction_decoder=NSymbols/Instruction_decoder 40|0|2*19941
+R=../src/Instruction_decoder.vhd|25
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|ca35fc9534a8cfce866c0066a9a678c8b2cd37d5b0762b52c86445e85a30f1bc50c7066956ecdf41a1f0d8104e879c6f
+Version/instruction_decoder=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|ca35fc9534a8cfce866c0066a9a678c8b2cd37d5b0762b52c86445e85a30f1bc50c7066956ecdf41a1f0d8104e879c6f
+Version/structure=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|eab8953fe0a98340e036eda18bd6d669520908b071c9b2c5bba6c893b05fa680acb461397801eef3ccc0d5ec9ad532c1
+
+[mmio]
+A/mmio=A/MMIO 24|../src/MMIO.bde|10000|1*3206706
+A/structure=21|../synthesis/top.vhd|557376|1*3209005
+I=0*16513128
+I/mmio=I/MMIO 0*16513416
+M=11|2|vef|1669482611370|../compile/MMIO.vhd|0*16398178*0x1bdb89349002651e63152b6af5f06c9223b05618|0*16398675*0x23b75c12e3e89f2ef000564498faa8c2
+M/mmio=M/MMIO 21|2|vef|1669482611373|../compile/MMIO.vhd|0*16490626*0xfac183dd343bab5ea45e81f479765376ff202ac7|0*16491306*0x38da3f8d370884129c7d7736fd3d0c50
+M/structure=M/STRUCTURE 21|2|vef|1665249569832|../synthesis/top.vhd|0*15809415*0xd4db79ddde3c997d6afe816fcb49ac40c4637255|0*15820132*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/mmio=NSymbols/MMIO 40|0|2*23528
+R=../compile/MMIO.vhd|17
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|64ccd99e82cced34ef7ff98728d71ef33fb5198475017786e187aed45fcdfe98
+Version/mmio=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|64ccd99e82cced34ef7ff98728d71ef33fb5198475017786e187aed45fcdfe98
+Version/structure=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|eab8953fe0a98340e036eda18bd6d669520908b071c9b2c5bba6c893b05fa6809a2f67ae277b28b02b0940a2dd43ec67
+
+[mux2_16bit_addr]
+A/mux2_16bit_addr=A/MUX2_16bit_addr 21|../src/MUX2_16bit_addr.vhd|38|1*3232109
+BinW64/mux2_16bit_addr=3*22201
+I=0*16513963
+I/mux2_16bit_addr=I/MUX2_16bit_addr 0*16514334
+M=11|2|vef|1669482611469|../src/MUX2_16bit_addr.vhd|0*21196*0x1894a84f8d96eda96c138b632b85024a4ea2bd9c|0*21653*0x23b75c12e3e89f2ef000564498faa8c2
+M/mux2_16bit_addr=M/MUX2_16bit_addr 21|2|vef|1669482611473|../src/MUX2_16bit_addr.vhd|0*21748*0x2d731b68755c17a5c04949b572c84cb05809775c|0*22048*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/mux2_16bit_addr=NSymbols/MUX2_16bit_addr 40|0|2*26681
+R=../src/MUX2_16bit_addr.vhd|25
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|cc0b7ac11cb1595ca7c1f5afc7a6560ea32950526b1455aa9caef1c5a605c34c2a95ed3ee7aa44adcb8cd61bd955e2f0
+Version/mux2_16bit_addr=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|cc0b7ac11cb1595ca7c1f5afc7a6560ea32950526b1455aa9caef1c5a605c34c2a95ed3ee7aa44adcb8cd61bd955e2f0
+
+[mux2_16bit_branch]
+A/mux2_16bit_branch=A/MUX2_16bit_branch 21|../src/MUX2_16bit_branch.vhd|38|1*3233179
+BinW64/mux2_16bit_branch=3*22550
+I=0*16514999
+I/mux2_16bit_branch=I/MUX2_16bit_branch 0*16515372
+M=11|2|vef|1669482611502|../src/MUX2_16bit_branch.vhd|0*22162*0xa7d624855fd69d4ad8868d0033dc4dc475d04d92|0*22663*0x23b75c12e3e89f2ef000564498faa8c2
+M/mux2_16bit_branch=M/MUX2_16bit_branch 21|2|vef|1669482611508|../src/MUX2_16bit_branch.vhd|0*22762*0x9f076ab0f749f19e936d58af0f483976ba7cc079|0*23123*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/mux2_16bit_branch=NSymbols/MUX2_16bit_branch 40|0|2*28992
+R=../src/MUX2_16bit_branch.vhd|25
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|d98b2fcd06ee0d8666a653a857163bc5800beb9993556ddad845a3cecf1a1b8a474b50c700767d817bb7a41a539febb2
+Version/mux2_16bit_branch=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|d98b2fcd06ee0d8666a653a857163bc5800beb9993556ddad845a3cecf1a1b8a474b50c700767d817bb7a41a539febb2
+
+[mux2_16bit_pc]
+A/mux2_16bit_pc=A/MUX2_16bit_PC 21|../src/MUX2_16bit_PC.vhd|38|1*3234720
+BinW64/mux2_16bit_pc=3*22907
+I=0*16516034
+I/mux2_16bit_pc=I/MUX2_16bit_PC 0*16516403
+M=11|2|vef|1669482611537|../src/MUX2_16bit_PC.vhd|0*23243*0x6c843e558d383a78d08ea9f66d12d1581ee31d6f|0*23728*0x23b75c12e3e89f2ef000564498faa8c2
+M/mux2_16bit_pc=M/MUX2_16bit_PC 21|2|vef|1669482611541|../src/MUX2_16bit_PC.vhd|0*23819*0xcc5b1131376fbad823125c8e579a886451dedbf4|0*24152*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/mux2_16bit_pc=NSymbols/MUX2_16bit_PC 40|0|2*31268
+R=../src/MUX2_16bit_PC.vhd|25
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|4fd979caf6924be86eb5d11d9c80fef67dc6ab8400ab67a76542522bbc34710cafb88457f0857be98c4f3e7bd9171a07
+Version/mux2_16bit_pc=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|4fd979caf6924be86eb5d11d9c80fef67dc6ab8400ab67a76542522bbc34710cafb88457f0857be98c4f3e7bd9171a07
+
+[mux2_8bit_read_data]
+A/mux2_8bit_read_data=A/MUX2_8bit_read_data 21|../src/MUX2_8bit_read_data.vhd|38|1*3236230
+BinW64/mux2_8bit_read_data=3*23260
+I=0*16517067
+I/mux2_8bit_read_data=I/MUX2_8bit_read_data 0*16517442
+M=11|2|vef|1669482611385|../src/MUX2_8bit_read_data.vhd|0*18469*0x0a32052b55d2ea1aa4f154bd5b61ab0ffcd95884|0*18978*0x23b75c12e3e89f2ef000564498faa8c2
+M/mux2_8bit_read_data=M/MUX2_8bit_read_data 21|2|vef|1669482611389|../src/MUX2_8bit_read_data.vhd|0*19081*0x9afc37243338305be0734a97f18858783faee33c|0*19450*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/mux2_8bit_read_data=NSymbols/MUX2_8bit_read_data 40|0|2*33578
+R=../src/MUX2_8bit_read_data.vhd|25
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|5a76b60fa1b1527db403a18b1767f3de0e45869a84fa2126ca88075e5f325f311efa46979f82091eae31f583d7c585e4
+Version/mux2_8bit_read_data=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|5a76b60fa1b1527db403a18b1767f3de0e45869a84fa2126ca88075e5f325f311efa46979f82091eae31f583d7c585e4
+
+[mux2_8bit_src1]
+A/mux2_8bit_src1=A/MUX2_8bit_src1 21|../src/MUX2_8bit_src1.vhd|38|1*3237768
+BinW64/mux2_8bit_src1=3*23618
+I=0*16518109
+I/mux2_8bit_src1=I/MUX2_8bit_src1 0*16518479
+M=11|2|vef|1669482611414|../src/MUX2_8bit_src1.vhd|0*19576*0xe26a3e65af38504ab150d5608eea563b4da6fa58|0*20065*0x23b75c12e3e89f2ef000564498faa8c2
+M/mux2_8bit_src1=M/MUX2_8bit_src1 21|2|vef|1669482611418|../src/MUX2_8bit_src1.vhd|0*27440*0xf4119583514695984eaee0696ccaa0adc508c216|0*27785*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/mux2_8bit_src1=NSymbols/MUX2_8bit_src1 40|0|2*35848
+R=../src/MUX2_8bit_src1.vhd|25
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|bbb41522ed28305c5e3102a76d3ff220bbddcecae09e1dfee8dfb33405dda09f07ab137672ad7221348fe28ec7d6a6e3
+Version/mux2_8bit_src1=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|bbb41522ed28305c5e3102a76d3ff220bbddcecae09e1dfee8dfb33405dda09f07ab137672ad7221348fe28ec7d6a6e3
+
+[mux2_8bit_src2]
+A/mux2_8bit_src2=A/MUX2_8bit_src2 21|../src/MUX2_8bit_src2.vhd|38|1*3239293
+BinW64/mux2_8bit_src2=3*23971
+I=0*16519136
+I/mux2_8bit_src2=I/MUX2_8bit_src2 0*16519506
+M=11|2|vef|1669482611444|../src/MUX2_8bit_src2.vhd|0*20158*0xbbe15d7d0c739dae4c77937d678de4343929428d|0*20647*0x23b75c12e3e89f2ef000564498faa8c2
+M/mux2_8bit_src2=M/MUX2_8bit_src2 21|2|vef|1669482611448|../src/MUX2_8bit_src2.vhd|0*20740*0x028d6681ab26637df570606c6b3659d36da533fa|0*21085*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/mux2_8bit_src2=NSymbols/MUX2_8bit_src2 40|0|2*38105
+R=../src/MUX2_8bit_src2.vhd|25
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|bbb41522ed28305c5e3102a76d3ff220be6ebd7569c53c578b956e8d70794520e941e467820bfe4ba1c0c8f933f7521d
+Version/mux2_8bit_src2=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|bbb41522ed28305c5e3102a76d3ff220be6ebd7569c53c578b956e8d707945207dff30af20f64454ebbc43e99774de5e
+
+[mux4_8bit]
+A/mux4_8bit=A/MUX4_8bit 21|../src/MUX4_8bit.vhd|40|1*3240818
+BinW64/mux4_8bit=3*24324
+I=0*16520161
+I/mux4_8bit=I/MUX4_8bit 0*16520526
+M=11|2|vef|1669482611570|../src/MUX4_8bit.vhd|0*24260*0x771ff1988b776eb86db8bd029730512f152c7435|0*24811*0x23b75c12e3e89f2ef000564498faa8c2
+M/mux4_8bit=M/MUX4_8bit 21|2|vef|1669482611574|../src/MUX4_8bit.vhd|0*27896*0x4200e9aae51cb99dfe4ce03b70b8922f61b001d0|0*28417*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/mux4_8bit=NSymbols/MUX4_8bit 40|0|2*40362
+R=../src/MUX4_8bit.vhd|25
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|c90401539fcefdc1627ec07dea22067c0d151d5d869536a5f373f144d9b53c6f35c7a3b91afa8335810d2b2d72547bd9
+Version/mux4_8bit=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|c90401539fcefdc1627ec07dea22067c0d151d5d869536a5f373f144d9b53c6f4aea87af156a540987fbcee18472866b
+
+[prescaler]
+NSymbols/prescaler=NSymbols/Prescaler 40|0|2*43426
+
+[program_counter]
+A/program_counter=A/Program_counter 21|../src/Program_counter.vhd|38|1*3243397
+A/structure=21|../synthesis/top.vhd|60342|1*3244957
+BinW64/program_counter=3*24801
+I=0*16521143
+I/program_counter=I/Program_counter 0*16521514
+M=11|2|vef|1669482611636|../src/Program_counter.vhd|0*16392020*0xcab8b07bf7eaa02b90aaf2824501b0a53fe8a793|0*16392483*0x23b75c12e3e89f2ef000564498faa8c2
+M/program_counter=M/Program_counter 21|2|vef|1669482611649|../src/Program_counter.vhd|0*16464368*0xb32e1db2307bd4c85225a6524c6b9aaa1b04a598|0*16464991*0x38da3f8d370884129c7d7736fd3d0c50
+M/structure=M/STRUCTURE 21|2|vef|1665249567509|../synthesis/top.vhd|0*1778064*0x099ecef27f3ec41914e99e674645b8e5196fa043|0*1781797*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/program_counter=NSymbols/Program_counter 40|0|2*44749
+R=../src/Program_counter.vhd|25
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|8f4c9b71392661bb64aaf1fd1ecdee3884ee5168192b3e6ad34e2bbdf84bdd45fe7d987a6ab6183c89618d01750297e2
+Version/program_counter=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|8f4c9b71392661bb64aaf1fd1ecdee3884ee5168192b3e6ad34e2bbdf84bdd45fe7d987a6ab6183c89618d01750297e2
+Version/structure=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|eab8953fe0a98340e036eda18bd6d669520908b071c9b2c5bba6c893b05fa68058a7e9a8c1e41264df8e16ed3233981d
+
+[program_counter_tb]
+A/tb_architecture=21|../src/testbench/Program_counter_tb.vhd|26|1*3255775
+BinW64/tb_architecture=3*25403
+I=0*16522043
+I/tb_architecture=0*16522446
+M=11|2|vef|1669482612447|../src/testbench/Program_counter_tb.vhd|0*29724*0x2ce3505daf2a688ca1df7af3b8fe4aed0f300da8|0*30080*0x23b75c12e3e89f2ef000564498faa8c2
+M/tb_architecture=21|2|vef|1669482612453|../src/testbench/Program_counter_tb.vhd|0*16415269*0x0cb30f59b8404d6cb71caee879edd48c257036b7|0*16417263*0x38da3f8d370884129c7d7736fd3d0c50
+R=../src/testbench/Program_counter_tb.vhd|9
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|8f4c9b71392661bb64aaf1fd1ecdee386b7dd171b19953fa1b7ffc34d0f558ced3ae1473cb3d988c2af7154271fd4e1e
+Version/tb_architecture=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534beac2d058a3671a89193746d7bd7086ca84
+
+[program_memory]
+A/program_memory=A/Program_memory 21|../src/Program_memory.vhd|39|1*3258561
+A/structure=21|../synthesis/top.vhd|60732|1*3260522
+BinW64/program_memory=3*27073
+I=0*16523164
+I/program_memory=I/Program_memory 0*16523534
+M=11|2|vef|1669482611875|../src/Program_memory.vhd|0*16458104*0x53626d4a24acef1d54f006911957593d7ef0c69e|0*16458598*0x23b75c12e3e89f2ef000564498faa8c2
+M/program_memory=M/Program_memory 21|2|vef|1669482611889|../src/Program_memory.vhd|0*16465105*0xa611ef0b886c7fbb2aa4a497a9a60a06d4905f02|0*16466024*0x38da3f8d370884129c7d7736fd3d0c50
+M/structure=M/STRUCTURE 21|2|vef|1665249567600|../synthesis/top.vhd|0*1781899*0x3f7c6fc9101d23f6c851a2d3df122417f0af7276|0*2150791*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/program_memory=NSymbols/Program_memory 40|0|2*46937
+R=../src/Program_memory.vhd|24
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|d0ed13850e7861a8ced02285067fb1419144bddbc45321bb01429c852c5575d6f5bb3a73a5ecd6b22f52e3ab8a99c33a
+Version/program_memory=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|d0ed13850e7861a8ced02285067fb1419144bddbc45321bb01429c852c5575d6f5bb3a73a5ecd6b22f52e3ab8a99c33a
+Version/structure=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|eab8953fe0a98340e036eda18bd6d669520908b071c9b2c5bba6c893b05fa68081541876b4efd6d8c73c8c428fd0f796
+
+[register_file]
+A/register_file=A/Register_file 21|../src/Register_file.vhd|45|1*3772852
+A/structure=21|../synthesis/top.vhd|71493|1*3776068
+BinW64/register_file=3*27999
+I=0*16524220
+I/register_file=I/Register_file 0*16524589
+M=11|2|vef|1669482611969|../src/Register_file.vhd|0*16393652*0xfd1966f09f8366e05d10be9b4ef8516b05fac635|0*16394333*0x23b75c12e3e89f2ef000564498faa8c2
+M/register_file=M/Register_file 21|2|vef|1669482611973|../src/Register_file.vhd|0*24894*0x558d1f1edf65c5c1a9ab71f994bc569b2126d7ac|0*25888*0x38da3f8d370884129c7d7736fd3d0c50
+M/structure=M/STRUCTURE 21|2|vef|1665249567640|../synthesis/top.vhd|0*2150892*0xafdb67900404c8421b8dbb77073a0735a7656d56|0*2352051*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/register_file=NSymbols/Register_file 40|0|2*49407
+R=../src/Register_file.vhd|25
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|a396fecd832e4041f15ae1be4d0acbff9590461053dd9c77b27bc3f69d93ce39ed98a5217d7954aea4ca3908f1593ceb
+Version/register_file=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|a396fecd832e4041f15ae1be4d0acbff9590461053dd9c77b27bc3f69d93ce39ed98a5217d7954aea4ca3908f1593ceb
+Version/structure=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|eab8953fe0a98340e036eda18bd6d669520908b071c9b2c5bba6c893b05fa680ed19e2d06ab5bd04a6da7a42e6ed80ce
+
+[register_file_tb]
+A/tb_architecture=21|../src/testbench/Register_file_tb.vhd|26|1*4080829
+BinW64/tb_architecture=3*28938
+I=0*16525110
+I/tb_architecture=0*16525511
+M=11|2|vef|1669482612521|../src/testbench/Register_file_tb.vhd|0*16393197*0xf60efa5db5aafdf9d7c79669633476e2b8a946dd|0*16393545*0x23b75c12e3e89f2ef000564498faa8c2
+M/tb_architecture=21|2|vef|1669482612555|../src/testbench/Register_file_tb.vhd|0*16417891*0x64efe5c3b99ee32260e6ec728b44b907caeda82c|0*16421024*0x38da3f8d370884129c7d7736fd3d0c50
+R=../src/testbench/Register_file_tb.vhd|9
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|a396fecd832e4041f15ae1be4d0acbffe1b32a18a8dc593eff6eff41bd424778ab7b730cfae67244cb0351cb4c76467f
+Version/tb_architecture=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534bea3e486e927b89fe5c8643f654abb3418c
+
+[reset_led]
+A/reset_led=A/Reset_LED 21|../src/Reset_LED.vhd|35|1*4085286
+BinW64/reset_led=3*31002
+I=0*16526166
+I/reset_led=I/Reset_LED 0*16526484
+M=11|2|vef|1665134468391|../src/Reset_LED.vhd|0*26307*0x5ca0fba5657f28dc6015e4c9d5cffa0dd7f1ed10|0*26636*0x23b75c12e3e89f2ef000564498faa8c2
+M/reset_led=M/Reset_LED 21|2|vef|1669482612011|../src/Reset_LED.vhd|0*26719*0x78781fd2e70a1d8ee1981e569541207acf878aeb|0*26949*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/reset_led=NSymbols/Reset_LED 40|0|2*53262
+R=../src/Reset_LED.vhd|24
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|740ef60f058b66aa84d7b6a921540099471558cb7edec52181b26edfc24e44ab4d140bfec11f4b845a923a7d86bca618
+Version/reset_led=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|740ef60f058b66aa84d7b6a921540099471558cb7edec52181b26edfc24e44abfb61a2623203caec4a5222fa673efb8a
+
+[softprocessor_constants]
+E=1*4086067
+I=0*16528523
+I/softprocessor_constants=0*16528780
+M=3|2|vef|1669482611032|../src/softprocessor_constants.vhd|0*0*0x0506f06bc6751e983a5a94874fea9d4bb407f2d8|0*7251*0x23b75c12e3e89f2ef000564498faa8c2
+M/softprocessor_constants=4|2|vef|1669482611035|../src/softprocessor_constants.vhd|0*7362*0xefc35d3204659de343678df1b2e29d3c0d2ab622|0*7577*0x38da3f8d370884129c7d7736fd3d0c50
+R=../src/softprocessor_constants.vhd|5
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|44c4811c5c8b5dfed98322cb5a2bc6ec29488afc7d35eb0ca1bf86b0cbbdf05826527262ddaa47cb266f3a3c4d9b973a476b16023d89646c81cc481046be09aa
+Version/softprocessor_constants=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|44c4811c5c8b5dfed98322cb5a2bc6ec29488afc7d35eb0ca1bf86b0cbbdf05826527262ddaa47cb266f3a3c4d9b973a476b16023d89646c81cc481046be09aa
+
+[sram]
+A/sram=A/SRAM 21|../src/SRAM.vhd|41|1*4102642
+A/structure=21|../synthesis/top.vhd|81785|1*4142741
+BinW64/sram=3*31300
+I=0*16529336
+I/sram=I/SRAM 0*16529696
+M=11|2|vef|1669482612040|../src/SRAM.vhd|0*16398752*0x83406e48277bd404128456a4811a2919adf0e462|0*16399259*0x23b75c12e3e89f2ef000564498faa8c2
+M/sram=M/SRAM 21|2|vef|1669482612046|../src/SRAM.vhd|0*16462397*0xc1ec83ceaee93cdffa78867dcd40563cd5e89e46|0*16464287*0x38da3f8d370884129c7d7736fd3d0c50
+M/structure=M/STRUCTURE 21|2|vef|1665249569758|../synthesis/top.vhd|0*2352151*0xeb97e75b7b3fcbbaaa1b12b6a70b70dbf010a2b7|0*15747042*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/sram=NSymbols/SRAM 40|0|2*54990
+R=../src/SRAM.vhd|25
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|70419ba38245af2cf06fdccb81d4518dee793d83d40eca3bac7fc5f9a01702df
+Version/sram=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|70419ba38245af2cf06fdccb81d4518dee793d83d40eca3bac7fc5f9a01702df
+Version/structure=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|eab8953fe0a98340e036eda18bd6d669520908b071c9b2c5bba6c893b05fa68075c3973b19f2f4004fa6eb0eb35ac282
+
+[sram_tb]
+A/tb_architecture=21|../src/testbench/SRAM_tb.vhd|26|1*24021076
+BinW64/tb_architecture=3*32540
+I=0*16530181
+I/tb_architecture=0*16530573
+M=11|2|vef|1669482612299|../src/testbench/Data_memory_tb.vhd|0*28908*0xcaa1f484bc9c597f3213351f4a67934c785d20a1|0*29227*0x23b75c12e3e89f2ef000564498faa8c2
+M/tb_architecture=21|2|vef|1669482612313|../src/testbench/SRAM_tb.vhd|0*16408544*0x8aa02538b3e9f63826c24c2934aa87e9c43db4ab|0*16411991*0x38da3f8d370884129c7d7736fd3d0c50
+R=../src/testbench/Data_memory_tb.vhd|9
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|8cb036f23f545a682617f89377beee3926527262ddaa47cb266f3a3c4d9b973a9b8c824e27f3162c3f2325116dec6803
+Version/tb_architecture=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534bea6c99fe6d982d09627bf8196140ef12d3
+
+[testbench_for_alu]
+Configures=ALU_tb.tb_architecture
+E=1*24025101
+I=0*16531015
+M=2|2|vef|1669482612222|../src/testbench/ALU_tb.vhd|0*16408188*0x4b3b9f0adaadfe08e39e65e0bdc517e4cec81e6e|0*16408437*0x38da3f8d370884129c7d7736fd3d0c50
+R=../src/testbench/ALU_tb.vhd|262
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|5efd636a07bb57613e35fadc81a5c3e5b8f23e5cabe222998e0c23066880c31ef9dcbd35c0ab6729262965726c337fed
+
+[testbench_for_gpio]
+Configures=GPIO_tb.tb_architecture
+E=1*24025590
+I=0*16531171
+M=2|2|vef|1669482612406|../src/testbench/GPIO_tb.vhd|0*16414903*0xe146cdd0728ca14c7f344515ba2e7574c2b8355d|0*16415159*0x38da3f8d370884129c7d7736fd3d0c50
+R=../src/testbench/GPIO_tb.vhd|115
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|5efd636a07bb57613e35fadc81a5c3e5911ce6f8c6e23d05ace76caf0ae88dde8d6143ec570283270853783ecff27f21
+
+[testbench_for_program_counter]
+Configures=Program_counter_tb.tb_architecture
+E=1*24026085
+I=0*16531329
+M=2|2|vef|1669482612462|../src/testbench/Program_counter_tb.vhd|0*16417393*0x7c53b500a98373781df779ff0156a049f0488e91|0*16417748*0x38da3f8d370884129c7d7736fd3d0c50
+R=../src/testbench/Program_counter_tb.vhd|113
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|5efd636a07bb57613e35fadc81a5c3e5b3665800340d19c7c830bfc8ec1dcb11c93a8db8299a2bc2cb209cef3c36a7a9f8c803167e4483739d3336dd64c7d00c
+
+[testbench_for_register_file]
+Configures=Register_file_tb.tb_architecture
+E=1*24026646
+I=0*16531509
+M=2|2|vef|1669482612590|../src/testbench/Register_file_tb.vhd|0*16421150*0xfb0024e663e827a0816477173200c15a12e9d107|0*16421487*0x38da3f8d370884129c7d7736fd3d0c50
+R=../src/testbench/Register_file_tb.vhd|148
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|5efd636a07bb57613e35fadc81a5c3e5f0a6ba115d3f100c8b37d02631a2b712ba7ce52835a93909fa8dd39d13a74f31104bc29a997a1372bbf56aa69a7e3a92
+
+[testbench_for_sram]
+Configures=SRAM_tb.tb_architecture
+E=1*24027195
+I=0*16531685
+M=2|2|vef|1669482612324|../src/testbench/SRAM_tb.vhd|0*16412099*0x81b7eeaa4c9af6b1c0890fd8743a07a464cbbc2c|0*16412355*0x38da3f8d370884129c7d7736fd3d0c50
+R=../src/testbench/SRAM_tb.vhd|158
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|5efd636a07bb57613e35fadc81a5c3e54f152f25409fc8b1decffc1fcc62ad2ec071b07bea087cf3040cd263de9af38d
+
+[testbench_for_top]
+Configures=top_tb.tb_architecture
+E=1*24027907
+I=0*16531843
+M=2|2|vef|1669544652306|../src/testbench/top_tb.vhd|0*16491391*0xf9b78c85c3a16e4f48b4ead7e164e5ccb8b9dbea|0*16491638*0x38da3f8d370884129c7d7736fd3d0c50
+R=../src/testbench/top_tb.vhd|131
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|5efd636a07bb57613e35fadc81a5c3e5af072de0eb681d575b392f1023b48c738ab257d1d7d20ef54595ff8d9165e7e6
+
+[testbench_for_uart_rx]
+Configures=UART_Rx_tb.tb_architecture
+E=1*24028642
+I=0*16531999
+M=2|2|vef|1669482612713|../src/testbench/UART_Rx_tb.vhd|0*16423594*0x26603c78d4cc9cde08594c1e197949b6d4d2af2f|0*16423877*0x38da3f8d370884129c7d7736fd3d0c50
+R=../src/testbench/UART_Rx_tb.vhd|112
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|5efd636a07bb57613e35fadc81a5c3e580770727063045b736173da00bce8f79b27cf04d49c234d2f597f5dc00800a82
+
+[top]
+A/structure=21|../synthesis/top.vhd|563911|1*24029155
+A/top=24|../src/top.bde|10000|1*24522126
+I=0*16532402
+I/top=0*16532689
+M=11|2|vef|1669482612147|../compile/top.vhd|0*16399794*0x724bde26e6bf961769d967645a38217749d059ca|0*16400206*0x23b75c12e3e89f2ef000564498faa8c2
+M/structure=M/STRUCTURE 21|2|vef|1665249570399|../synthesis/top.vhd|0*16000719*0x2d84ef67b21129bd83ab8e32241638844051fa2a|0*16391930*0x38da3f8d370884129c7d7736fd3d0c50
+M/top=21|2|vef|1669544536507|../compile/top.vhd|0*16491745*0xf0540f0220b7cacad10c9e3480d4500c5b100367|0*16499931*0x38da3f8d370884129c7d7736fd3d0c50
+R=../compile/top.vhd|17
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|f1fdecad8dc292011c024b8d633bc5c715f37702d165b8f64870bad8156ef7d5
+Version/structure=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|eab8953fe0a98340e036eda18bd6d669520908b071c9b2c5bba6c893b05fa680e645e36661f497577d82d2cfd81a058c
+Version/top=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|f1fdecad8dc292011c024b8d633bc5c758b8267c0cbcbda40a2f11a5fdbe9749
+
+[top_tb]
+A/tb_architecture=21|../src/testbench/top_tb.vhd|26|1*24537827
+BinW64/tb_architecture=3*34819
+I=0*16533697
+I/tb_architecture=0*16534088
+M=11|2|vef|1669482612249|../src/testbench/top_tb.vhd|0*27045*0x11bf89824217277890828615ab0c8df0562e1c13|0*27353*0x23b75c12e3e89f2ef000564498faa8c2
+M/tb_architecture=21|2|vef|1669544652294|../src/testbench/top_tb.vhd|0*16500013*0xafb13cc6f40199b44bd5cbf71cb7644bad56dcb3|0*16502987*0x38da3f8d370884129c7d7736fd3d0c50
+R=../src/testbench/top_tb.vhd|9
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|b0d2e10044441fefc12247a6f126cc0cbe7335d2fe7e9e1653edf0c842d74f45
+Version/tb_architecture=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534beadacde1d7812a623af2ac771c40ee5507
+
+[uart_rx]
+A/structure=21|../synthesis/top.vhd|554779|1*24542257
+A/uart_rx=A/UART_Rx 21|../src/UART_Rx.vhd|37|1*24612393
+BinW64/uart_rx=3*36560
+I=0*16534811
+I/uart_rx=I/UART_Rx 0*16535174
+M=11|2|vef|1669482612074|../src/UART_Rx.vhd|0*16394843*0xa624774bc05bdf9d46f3f050367a8c14ac689e2b|0*16395304*0x23b75c12e3e89f2ef000564498faa8c2
+M/structure=M/STRUCTURE 21|2|vef|1665249569790|../synthesis/top.vhd|0*15747133*0xe8e2370fef3bf7d8662a126286178afd36ec0b67|0*15787944*0x38da3f8d370884129c7d7736fd3d0c50
+M/uart_rx=M/UART_Rx 21|2|vef|1669482612081|../src/UART_Rx.vhd|0*16458691*0x7c12315300c97eedb2ace75166cc5a950fa38f96|0*16460851*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/uart_rx=NSymbols/UART_Rx 40|0|2*57795
+R=../src/UART_Rx.vhd|23
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|d4533c9946a59a81de243b4bafd133f826527262ddaa47cb266f3a3c4d9b973ae9fa78e38cf9a42d401c9a59f625c770
+Version/structure=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|eab8953fe0a98340e036eda18bd6d669520908b071c9b2c5bba6c893b05fa6809791149c8bc06ff2a29df6488464a22b
+Version/uart_rx=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|d4533c9946a59a81de243b4bafd133f826527262ddaa47cb266f3a3c4d9b973ae9fa78e38cf9a42d401c9a59f625c770
+
+[uart_rx_tb]
+A/tb_architecture=21|../src/testbench/UART_Rx_tb.vhd|26|1*24614966
+BinW64/tb_architecture=3*38042
+I=0*16535671
+I/tb_architecture=0*16536066
+M=11|2|vef|1669482612655|../src/testbench/UART_Rx_tb.vhd|0*16394424*0x7400adde99c90bbe4670b017ec53edbdeabeb454|0*16394748*0x23b75c12e3e89f2ef000564498faa8c2
+M/tb_architecture=21|2|vef|1669482612669|../src/testbench/UART_Rx_tb.vhd|0*16421624*0xeea8bf293ebd2119b40c4658402e1702787262ec|0*16423480*0x38da3f8d370884129c7d7736fd3d0c50
+R=../src/testbench/UART_Rx_tb.vhd|9
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|2d16d0bc9825a198a73147ead69c0db7689b92584ee5f3c4c784b4cd6f12dde2b1b478bc25e99eab8acefb0c08bbd5d3
+Version/tb_architecture=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534bead5aa18a34d6a4f242bbcacc4a2ba4d50
+
+[uart_tx]
+A/structure=21|../synthesis/top.vhd|556386|1*24618183
+A/uart_tx=A/UART_Tx 21|../src/UART_Tx.vhd|35|1*24654774
+BinW64/uart_tx=3*39464
+I=0*16536775
+I/uart_tx=I/UART_Tx 0*16537138
+M=11|2|vef|1669482612112|../src/UART_Tx.vhd|0*16399332*0x4bfa7d225404c021fa7369076a327320675a2384|0*16399715*0x23b75c12e3e89f2ef000564498faa8c2
+M/structure=M/STRUCTURE 21|2|vef|1665249569815|../synthesis/top.vhd|0*15788038*0x4687ed7e7c3a08be1f658dfdb6a9a312ae454d75|0*15809321*0x38da3f8d370884129c7d7736fd3d0c50
+M/uart_tx=M/UART_Tx 21|2|vef|1669482612119|../src/UART_Tx.vhd|0*16460941*0x7d34013e37bb473229b4514ccf5044e67cbe6c70|0*16462307*0x38da3f8d370884129c7d7736fd3d0c50
+NSymbols/uart_tx=NSymbols/UART_Tx 40|0|2*60594
+R=../src/UART_Tx.vhd|23
+Version=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|48d6a522eb64880a1c272ab04e64821526527262ddaa47cb266f3a3c4d9b973a06389acf5090b5f02dc5d8626d75e3c2
+Version/structure=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|eab8953fe0a98340e036eda18bd6d669520908b071c9b2c5bba6c893b05fa680ba45a4cf66bec9bc4c5b3a8082cb4b38
+Version/uart_tx=13.0.376.8320 (Windows64)|00000003789cd3f5370000015800ad|48d6a522eb64880a1c272ab04e64821526527262ddaa47cb266f3a3c4d9b973a06389acf5090b5f02dc5d8626d75e3c2
+
+[~U]
+adder_16bit=Adder_16bit 11|0*16503093||0x3
+alu=ALU 11|0*16504049||0x3
+alu_tb=ALU_tb 11|0*16505046|
+clock_prescaler=Clock_prescaler 11|0*16505995||0x3
+constant_values=11|0*16506865||0x3
+control_unit=Control_unit 11|0*16507732||0x3
+data_memory=Data_memory 11|0*16508756||0x3
+gpio=GPIO 11|0*16509821||0x3
+gpio_tb=GPIO_tb 11|0*16510834|
+instruction_decoder=Instruction_decoder 11|0*16511786||0x3
+mmio=MMIO 11|0*16512837||0x3
+mux2_16bit_addr=MUX2_16bit_addr 11|0*16513737||0x3
+mux2_16bit_branch=MUX2_16bit_branch 11|0*16514721||0x3
+mux2_16bit_pc=MUX2_16bit_PC 11|0*16515763||0x3
+mux2_8bit_read_data=MUX2_8bit_read_data 11|0*16516786||0x3
+mux2_8bit_src1=MUX2_8bit_src1 11|0*16517837||0x3
+mux2_8bit_src2=MUX2_8bit_src2 11|0*16518864||0x3
+mux4_8bit=MUX4_8bit 11|0*16519891||0x3
+prescaler=Prescaler 11|||0x3
+program_counter=Program_counter 11|0*16520901||0x3
+program_counter_tb=Program_counter_tb 11|0*16521901|
+program_memory=Program_memory 11|0*16522906||0x3
+register_file=Register_file 11|0*16523919||0x3
+register_file_tb=Register_file_tb 11|0*16524972|
+reset_led=Reset_LED 11|0*16525969||0x3
+softprocessor_constants=3|0*16526812|0*16526964
+sram=SRAM 11|0*16529061||0x3
+sram_tb=SRAM_tb 11|0*16530061|
+testbench_for_alu=TESTBENCH_FOR_ALU 2||
+testbench_for_gpio=TESTBENCH_FOR_GPIO 2||
+testbench_for_program_counter=TESTBENCH_FOR_PROGRAM_COUNTER 2||
+testbench_for_register_file=TESTBENCH_FOR_REGISTER_FILE 2||
+testbench_for_sram=TESTBENCH_FOR_SRAM 2||
+testbench_for_top=TESTBENCH_FOR_TOP 2||
+testbench_for_uart_rx=TESTBENCH_FOR_UART_RX 2||
+top=11|0*16532163|
+top_tb=11|0*16533579|
+uart_rx=UART_Rx 11|0*16534528||0x3
+uart_rx_tb=UART_Rx_tb 11|0*16535545|
+uart_tx=UART_Tx 11|0*16536515||0x3
