@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Oct  8 20:03:07 2022
+# Process ID: 24412
+# Current directory: D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/synthesis
+# Command line: vivado.exe -mode batch -log vivado.log -journal transcript.log -source D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/synthesis/run_vivado.tcl
+# Log file: D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/synthesis/vivado.log
+# Journal file: D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/synthesis\transcript.log
+#-----------------------------------------------------------
+source D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/synthesis/run_vivado.tcl

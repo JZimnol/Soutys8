@@ -1,0 +1,852 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Oct  8 20:03:07 2022
+# Process ID: 24412
+# Current directory: D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/synthesis
+# Command line: vivado.exe -mode batch -log vivado.log -journal transcript.log -source D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/synthesis/run_vivado.tcl
+# Log file: D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/synthesis/vivado.log
+# Journal file: D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/synthesis\transcript.log
+#-----------------------------------------------------------
+source D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/synthesis/run_vivado.tcl
+# create_project -force top {D:\Programy\ActiveHDL\My_Designs\Soutys8_GitHub\Soutys8\synthesis} -part 7s50csga324-1
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1123.719 ; gain = 0.000
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/softprocessor_constants.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/ALU.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Clock_prescaler.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/constant_values.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Control_unit.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/Data_memory.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/GPIO.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Instruction_decoder.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/MMIO.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_8bit_read_data.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_8bit_src1.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_8bit_src2.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_16bit_addr.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_16bit_branch.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_16bit_PC.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX4_8bit.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Program_counter.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Program_memory.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Register_file.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Reset_LED.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/SRAM.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/UART_Rx.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/UART_Tx.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Adder_16bit.vhd}
+# add_files -norecurse {D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd}
+# set_property top top [current_fileset]
+# set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+# synth_design -top top -incremental off -flatten_hierarchy rebuilt -gated_clock_conversion off -fsm_extraction auto -bufg 12 -shreg_min_size 3 -max_bram -1 -max_uram -1 -max_dsp -1 -max_bram_cascade_height -1 -max_uram_cascade_height -1 -cascade_dsp auto -directive default -resource_sharing auto -control_set_opt_threshold auto -debug_log
+Command: synth_design -top top -incremental off -flatten_hierarchy rebuilt -gated_clock_conversion off -fsm_extraction auto -bufg 12 -shreg_min_size 3 -max_bram -1 -max_uram -1 -max_dsp -1 -max_bram_cascade_height -1 -max_uram_cascade_height -1 -cascade_dsp auto -directive default -resource_sharing auto -control_set_opt_threshold auto -debug_log
+Starting synth_design
+Using part: xc7s50csga324-1
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 31420
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1123.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd:29]
+INFO: [Synth 8-3491] module 'MUX2_16bit_branch' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_16bit_branch.vhd:25' bound to instance 'U10' of component 'MUX2_16bit_branch' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'MUX2_16bit_branch' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_16bit_branch.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'MUX2_16bit_branch' (1#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_16bit_branch.vhd:38]
+INFO: [Synth 8-3491] module 'constant_values' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/constant_values.vhd:24' bound to instance 'U15' of component 'constant_values' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd:235]
+INFO: [Synth 8-638] synthesizing module 'constant_values' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/constant_values.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'constant_values' (2#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/constant_values.vhd:34]
+INFO: [Synth 8-3491] module 'Clock_prescaler' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Clock_prescaler.vhd:23' bound to instance 'U16' of component 'Clock_Prescaler' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd:241]
+INFO: [Synth 8-638] synthesizing module 'Clock_prescaler' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Clock_prescaler.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'Clock_prescaler' (3#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Clock_prescaler.vhd:33]
+INFO: [Synth 8-3491] module 'UART_Rx' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/UART_Rx.vhd:23' bound to instance 'U17' of component 'UART_Rx' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd:247]
+INFO: [Synth 8-638] synthesizing module 'UART_Rx' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/UART_Rx.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'UART_Rx' (4#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/UART_Rx.vhd:37]
+INFO: [Synth 8-3491] module 'UART_Tx' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/UART_Tx.vhd:23' bound to instance 'U18' of component 'UART_Tx' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd:257]
+INFO: [Synth 8-638] synthesizing module 'UART_Tx' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/UART_Tx.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'UART_Tx' (5#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/UART_Tx.vhd:35]
+INFO: [Synth 8-3491] module 'MUX2_16bit_addr' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_16bit_addr.vhd:25' bound to instance 'U19' of component 'MUX2_16bit_addr' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd:265]
+INFO: [Synth 8-638] synthesizing module 'MUX2_16bit_addr' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_16bit_addr.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'MUX2_16bit_addr' (6#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_16bit_addr.vhd:38]
+INFO: [Synth 8-3491] module 'Program_counter' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Program_counter.vhd:25' bound to instance 'U20' of component 'Program_counter' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd:273]
+INFO: [Synth 8-638] synthesizing module 'Program_counter' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Program_counter.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'Program_counter' (7#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Program_counter.vhd:38]
+INFO: [Synth 8-3491] module 'MUX2_16bit_PC' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_16bit_PC.vhd:25' bound to instance 'U21' of component 'MUX2_16bit_PC' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd:281]
+INFO: [Synth 8-638] synthesizing module 'MUX2_16bit_PC' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_16bit_PC.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'MUX2_16bit_PC' (8#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_16bit_PC.vhd:38]
+INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Adder_16bit.vhd:24' bound to instance 'U22' of component 'Adder_16bit' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd:289]
+INFO: [Synth 8-638] synthesizing module 'Adder_16bit' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Adder_16bit.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'Adder_16bit' (9#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Adder_16bit.vhd:36]
+INFO: [Synth 8-3491] module 'Adder_16bit' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Adder_16bit.vhd:24' bound to instance 'U23' of component 'Adder_16bit' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd:296]
+INFO: [Synth 8-3491] module 'Instruction_decoder' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Instruction_decoder.vhd:25' bound to instance 'U24' of component 'Instruction_decoder' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd:303]
+INFO: [Synth 8-638] synthesizing module 'Instruction_decoder' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Instruction_decoder.vhd:44]
+WARNING: [Synth 8-614] signal 's_immediate' is read in the process but is not in the sensitivity list [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Instruction_decoder.vhd:64]
+WARNING: [Synth 8-614] signal 's_sram_address' is read in the process but is not in the sensitivity list [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Instruction_decoder.vhd:64]
+WARNING: [Synth 8-614] signal 's_reg2_addr' is read in the process but is not in the sensitivity list [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Instruction_decoder.vhd:64]
+WARNING: [Synth 8-614] signal 's_reg1_addr' is read in the process but is not in the sensitivity list [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Instruction_decoder.vhd:64]
+WARNING: [Synth 8-614] signal 's_reg3_addr' is read in the process but is not in the sensitivity list [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Instruction_decoder.vhd:64]
+WARNING: [Synth 8-614] signal 's_instruction_completion' is read in the process but is not in the sensitivity list [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Instruction_decoder.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'Instruction_decoder' (10#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Instruction_decoder.vhd:44]
+INFO: [Synth 8-3491] module 'Program_memory' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Program_memory.vhd:26' bound to instance 'U25' of component 'Program_memory' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd:315]
+INFO: [Synth 8-638] synthesizing module 'Program_memory' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Program_memory.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Program_memory' (11#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Program_memory.vhd:39]
+INFO: [Synth 8-3491] module 'Data_memory' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/Data_memory.vhd:17' bound to instance 'U3' of component 'Data_memory' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd:324]
+INFO: [Synth 8-638] synthesizing module 'Data_memory' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/Data_memory.vhd:34]
+INFO: [Synth 8-3491] module 'Register_file' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Register_file.vhd:25' bound to instance 'U1' of component 'Register_file' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/Data_memory.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'Register_file' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Register_file.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'Register_file' (12#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Register_file.vhd:45]
+INFO: [Synth 8-3491] module 'MMIO' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/MMIO.vhd:17' bound to instance 'U2' of component 'MMIO' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/Data_memory.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'MMIO' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/MMIO.vhd:29]
+INFO: [Synth 8-3491] module 'GPIO' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/GPIO.vhd:25' bound to instance 'U1' of component 'GPIO' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/MMIO.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'GPIO' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/GPIO.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'GPIO' (13#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/GPIO.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'MMIO' (14#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/MMIO.vhd:29]
+INFO: [Synth 8-3491] module 'SRAM' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/SRAM.vhd:25' bound to instance 'U3' of component 'SRAM' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/Data_memory.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'SRAM' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/SRAM.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'SRAM' (15#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/SRAM.vhd:41]
+INFO: [Synth 8-3491] module 'MUX2_8bit_read_data' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_8bit_read_data.vhd:25' bound to instance 'U5' of component 'MUX2_8bit_read_data' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/Data_memory.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'MUX2_8bit_read_data' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_8bit_read_data.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'MUX2_8bit_read_data' (16#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_8bit_read_data.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'Data_memory' (17#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/Data_memory.vhd:34]
+INFO: [Synth 8-3491] module 'Control_unit' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Control_unit.vhd:25' bound to instance 'U4' of component 'Control_unit' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd:340]
+INFO: [Synth 8-638] synthesizing module 'Control_unit' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Control_unit.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'Control_unit' (18#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Control_unit.vhd:37]
+INFO: [Synth 8-3491] module 'ALU' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/ALU.vhd:25' bound to instance 'U5' of component 'ALU' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd:347]
+INFO: [Synth 8-638] synthesizing module 'ALU' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/ALU.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (19#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/ALU.vhd:42]
+INFO: [Synth 8-3491] module 'MUX2_8bit_src2' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_8bit_src2.vhd:25' bound to instance 'U6' of component 'MUX2_8bit_src2' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd:358]
+INFO: [Synth 8-638] synthesizing module 'MUX2_8bit_src2' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_8bit_src2.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'MUX2_8bit_src2' (20#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_8bit_src2.vhd:38]
+INFO: [Synth 8-3491] module 'MUX2_8bit_src1' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_8bit_src1.vhd:25' bound to instance 'U7' of component 'MUX2_8bit_src1' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd:366]
+INFO: [Synth 8-638] synthesizing module 'MUX2_8bit_src1' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_8bit_src1.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'MUX2_8bit_src1' (21#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX2_8bit_src1.vhd:38]
+INFO: [Synth 8-3491] module 'MUX4_8bit' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX4_8bit.vhd:25' bound to instance 'U8' of component 'MUX4_8bit' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd:374]
+INFO: [Synth 8-638] synthesizing module 'MUX4_8bit' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX4_8bit.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'MUX4_8bit' (22#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX4_8bit.vhd:40]
+INFO: [Synth 8-3491] module 'Reset_LED' declared at 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Reset_LED.vhd:24' bound to instance 'U9' of component 'Reset_LED' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd:384]
+INFO: [Synth 8-638] synthesizing module 'Reset_LED' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Reset_LED.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'Reset_LED' (23#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Reset_LED.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'top' (24#1) [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd:29]
+WARNING: [Synth 8-7129] Port in_control[31] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[30] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[29] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[28] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[27] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[26] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[25] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[24] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[23] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[22] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[21] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[20] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[19] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[18] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[17] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[16] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[15] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[14] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[13] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[12] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[11] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[10] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[9] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[8] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[7] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[6] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[3] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[2] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[1] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[0] in module MUX4_8bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[31] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[30] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[29] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[28] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[27] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[26] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[25] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[24] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[23] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[22] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[21] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[20] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[19] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[18] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[17] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[16] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[15] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[14] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[13] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[12] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[11] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[10] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[9] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[8] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[7] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[6] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[5] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[4] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[3] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[2] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[0] in module MUX2_8bit_src1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[31] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[30] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[29] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[28] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[27] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[26] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[25] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[24] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[23] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[22] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[21] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[20] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[19] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[18] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[17] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[16] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[15] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[14] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[13] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[12] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[11] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[10] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[9] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[8] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[7] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[6] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[5] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[4] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[3] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[1] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[0] in module MUX2_8bit_src2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[31] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[30] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[29] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[28] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[27] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[26] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[25] in module ALU is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_control[24] in module ALU is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:14 ; elapsed = 00:01:24 . Memory (MB): peak = 2365.258 ; gain = 1241.539
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:21 ; elapsed = 00:01:32 . Memory (MB): peak = 2365.258 ; gain = 1241.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:21 ; elapsed = 00:01:32 . Memory (MB): peak = 2365.258 ; gain = 1241.539
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.877 . Memory (MB): peak = 2365.258 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2365.258 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.538 . Memory (MB): peak = 2365.258 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:49 ; elapsed = 00:02:07 . Memory (MB): peak = 2365.258 ; gain = 1241.539
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7081] synth_design has launched 2 processes for multithreading.
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s50csga324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:50 ; elapsed = 00:02:07 . Memory (MB): peak = 2365.258 ; gain = 1241.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:50 ; elapsed = 00:02:07 . Memory (MB): peak = 2365.258 ; gain = 1241.539
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 's_rx_state_reg' in module 'UART_Rx'
+INFO: [Synth 8-802] inferred FSM for state register 's_tx_state_reg' in module 'UART_Tx'
+INFO: [Synth 8-5544] ROM "ONE_HOT_LUT[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ONE_HOT_LUT[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/SRAM.vhd:70]
+INFO: [Synth 8-5546] ROM "s_control" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              st_rx_idle |                              000 |                              000
+         st_rx_start_bit |                              001 |                              001
+         st_rx_data_bits |                              010 |                              010
+          st_rx_stop_bit |                              011 |                              011
+               st_rx_end |                              100 |                              101
+             st_rx_error |                              101 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 's_rx_state_reg' using encoding 'sequential' in module 'UART_Rx'
+WARNING: [Synth 8-327] inferring latch for variable 'out_rx_data_reg' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/UART_Rx.vhd:159]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              st_tx_idle |                               00 |                               00
+         st_tx_start_bit |                               01 |                               01
+         st_tx_data_bits |                               10 |                               10
+          st_tx_stop_bit |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 's_tx_state_reg' using encoding 'sequential' in module 'UART_Tx'
+WARNING: [Synth 8-327] inferring latch for variable 's_reg1_addr_reg' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Instruction_decoder.vhd:70]
+WARNING: [Synth 8-327] inferring latch for variable 's_reg2_addr_reg' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Instruction_decoder.vhd:71]
+WARNING: [Synth 8-327] inferring latch for variable 's_reg3_addr_reg' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Instruction_decoder.vhd:72]
+WARNING: [Synth 8-327] inferring latch for variable 's_immediate_reg' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Instruction_decoder.vhd:73]
+WARNING: [Synth 8-327] inferring latch for variable 's_sram_address_reg' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Instruction_decoder.vhd:74]
+WARNING: [Synth 8-327] inferring latch for variable 's_read_data_reg' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/GPIO.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 's_read_data_reg' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/SRAM.vhd:60]
+WARNING: [Synth 8-327] inferring latch for variable 's_control_reg' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/Control_unit.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 's_result_reg' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/ALU.vhd:200]
+WARNING: [Synth 8-327] inferring latch for variable 'out_output_reg' [D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/MUX4_8bit.vhd:45]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:18 ; elapsed = 00:04:34 . Memory (MB): peak = 2365.258 ; gain = 1241.539
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |SRAM__GB0        |           1|     32788|
+|2     |SRAM__GB1        |           1|     25388|
+|3     |SRAM__GB2        |           1|     17373|
+|4     |SRAM__GB3        |           1|     25344|
+|5     |SRAM__GB4        |           1|     31520|
+|6     |SRAM__GB5        |           1|     39199|
+|7     |Data_memory__GC0 |           1|      6772|
+|8     |top__GC0         |           1|      4608|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 2     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 8     
+	   3 Input      1 Bit         XORs := 4     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 2147  
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  50 Input   32 Bit        Muxes := 1     
+	  50 Input   18 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 3     
+	  36 Input   16 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 4     
+	   6 Input   11 Bit        Muxes := 1     
+	   3 Input   11 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 11    
+	   6 Input    8 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 2     
+	  10 Input    8 Bit        Muxes := 1     
+	  27 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   6 Input    6 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	  13 Input    5 Bit        Muxes := 1     
+	  11 Input    5 Bit        Muxes := 1     
+	  17 Input    5 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   6 Input    3 Bit        Muxes := 1     
+	  11 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 2109  
+	   2 Input    1 Bit        Muxes := 150   
+	   6 Input    1 Bit        Muxes := 6     
+	   4 Input    1 Bit        Muxes := 5     
+	   5 Input    1 Bit        Muxes := 2     
+	  12 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SRAM 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2048  
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 2048  
+	   2 Input    1 Bit        Muxes := 5     
+Module Register_file 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 32    
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 32    
+Module GPIO 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	                8 Bit    Registers := 64    
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 66    
+	   3 Input    1 Bit        Muxes := 60    
+Module MUX2_8bit_read_data 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 1     
+Module MUX2_16bit_branch 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 1     
+Module Clock_prescaler 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+Module UART_Rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   11 Bit        Muxes := 3     
+	   6 Input   11 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 4     
+	   6 Input    1 Bit        Muxes := 5     
+Module UART_Tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   11 Bit        Muxes := 1     
+	   3 Input   11 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 4     
+	   3 Input    1 Bit        Muxes := 1     
+Module MUX2_16bit_addr 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 1     
+Module Program_counter 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module MUX2_16bit_PC 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 1     
+Module Adder_16bit__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+Module Adder_16bit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+Module Instruction_decoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    7 Bit       Adders := 1     
++---Muxes : 
+	  36 Input   16 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	  10 Input    8 Bit        Muxes := 1     
+	   6 Input    6 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	  13 Input    5 Bit        Muxes := 1     
+	  11 Input    5 Bit        Muxes := 1     
+	  17 Input    5 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 40    
+	   6 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 2     
+Module Control_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  50 Input   32 Bit        Muxes := 1     
+	  50 Input   18 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 8     
+	   3 Input      1 Bit         XORs := 4     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 2     
+	  27 Input    8 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	  11 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+	  12 Input    1 Bit        Muxes := 1     
+Module MUX2_8bit_src2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 1     
+Module MUX2_8bit_src1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 1     
+Module MUX4_8bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input    8 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "ONE_HOT_LUT[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "s_control" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[41][0]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[44][0]'
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[44][0]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[38][0]'
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[35][0]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[38][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U3i_7/\U2/U1/gpio_registers_reg[38][0] )
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[35][1]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[44][1]'
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[38][1]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[44][1]'
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[44][1]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[41][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U3i_7/\U2/U1/gpio_registers_reg[41][1] )
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[44][2]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[38][2]'
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[41][2]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[38][2]'
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[35][2]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[38][2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U3i_7/\U2/U1/gpio_registers_reg[38][2] )
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[35][3]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[44][3]'
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[38][3]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[44][3]'
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[44][3]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[41][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U3i_7/\U2/U1/gpio_registers_reg[41][3] )
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[35][4]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[44][4]'
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[38][4]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[44][4]'
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[44][4]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[41][4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U3i_7/\U2/U1/gpio_registers_reg[41][4] )
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[35][5]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[44][5]'
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[38][5]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[44][5]'
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[44][5]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[41][5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U3i_7/\U2/U1/gpio_registers_reg[41][5] )
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[35][6]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[44][6]'
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[38][6]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[44][6]'
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[41][6]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[44][6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U3i_7/\U2/U1/gpio_registers_reg[44][6] )
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[35][7]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[44][7]'
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[38][7]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[44][7]'
+INFO: [Synth 8-3886] merging instance 'U3i_7/U2/U1/gpio_registers_reg[44][7]' (FDRE) to 'U3i_7/U2/U1/gpio_registers_reg[41][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U3i_7/\U2/U1/gpio_registers_reg[41][7] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:57 ; elapsed = 00:06:43 . Memory (MB): peak = 2365.258 ; gain = 1241.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+--------------+---------------+----------------+
+|Module Name | RTL Object   | Depth x Width | Implemented As | 
++------------+--------------+---------------+----------------+
+|ALU         | s_SREG_flags | 32x8          | LUT            | 
+|ALU         | s_SREG_flags | 32x8          | LUT            | 
++------------+--------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-------------+-----------+----------------------+--------------+
+|Module Name | RTL Object  | Inference | Size (Depth x Width) | Primitives   | 
++------------+-------------+-----------+----------------------+--------------+
+|top         | U25/ROM_reg | Implied   | 512 x 8              | RAM64M x 96  | 
++------------+-------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |SRAM__GB0        |           1|     32788|
+|2     |SRAM__GB1        |           1|     25388|
+|3     |SRAM__GB2        |           1|      8193|
+|4     |SRAM__GB3        |           1|      2398|
+|5     |SRAM__GB4        |           1|      3400|
+|6     |SRAM__GB5        |           1|      4169|
+|7     |Data_memory__GC0 |           1|      2925|
+|8     |top__GC0         |           1|      2059|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:13 ; elapsed = 00:07:01 . Memory (MB): peak = 2365.258 ; gain = 1241.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:05:13 ; elapsed = 00:07:01 . Memory (MB): peak = 2365.258 ; gain = 1241.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-------------+-----------+----------------------+--------------+
+|Module Name | RTL Object  | Inference | Size (Depth x Width) | Primitives   | 
++------------+-------------+-----------+----------------------+--------------+
+|top         | U25/ROM_reg | Implied   | 512 x 8              | RAM64M x 96  | 
++------------+-------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |SRAM__GB0        |           1|     32788|
+|2     |SRAM__GB1        |           1|     25388|
+|3     |SRAM__GB2        |           1|      8193|
+|4     |SRAM__GB3        |           1|      2398|
+|5     |SRAM__GB4        |           1|      3400|
+|6     |SRAM__GB5        |           1|      4169|
+|7     |Data_memory__GC0 |           1|      2925|
+|8     |top__GC0         |           1|      2059|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:24 ; elapsed = 00:07:34 . Memory (MB): peak = 2365.258 ; gain = 1241.539
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------+------------+----------+
+|      |RTL Partition    |Replication |Instances |
++------+-----------------+------------+----------+
+|1     |SRAM__GB0        |           1|     15279|
+|2     |SRAM__GB1        |           1|     16617|
+|3     |SRAM__GB2        |           1|      7679|
+|4     |SRAM__GB3        |           1|       807|
+|5     |SRAM__GB4        |           1|      1274|
+|6     |SRAM__GB5        |           1|      1675|
+|7     |Data_memory__GC0 |           1|      1732|
+|8     |top__GC0         |           1|       869|
++------+-----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:06:12 ; elapsed = 00:08:26 . Memory (MB): peak = 2365.258 ; gain = 1241.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:06:12 ; elapsed = 00:08:27 . Memory (MB): peak = 2365.258 ; gain = 1241.539
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:16 ; elapsed = 00:08:32 . Memory (MB): peak = 2365.258 ; gain = 1241.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:06:17 ; elapsed = 00:08:33 . Memory (MB): peak = 2365.258 ; gain = 1241.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:19 ; elapsed = 00:08:35 . Memory (MB): peak = 2365.258 ; gain = 1241.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:06:19 ; elapsed = 00:08:36 . Memory (MB): peak = 2365.258 ; gain = 1241.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     4|
+|2     |CARRY4 |    33|
+|3     |LUT1   |    47|
+|4     |LUT2   |   415|
+|5     |LUT3   |   382|
+|6     |LUT4   |   513|
+|7     |LUT5   |   816|
+|8     |LUT6   | 16574|
+|9     |MUXF7  |  6738|
+|10    |MUXF8  |  3229|
+|11    |RAM64M |    96|
+|12    |FDRE   | 17164|
+|13    |FDSE   |   104|
+|14    |LD     |   201|
+|15    |IBUF   |     3|
+|16    |IOBUF  |    32|
+|17    |OBUF   |     3|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+--------------------+------+
+|      |Instance |Module              |Cells |
++------+---------+--------------------+------+
+|1     |top      |                    | 46354|
+|2     |  U16    |Clock_prescaler     |     2|
+|3     |  U17    |UART_Rx             |   129|
+|4     |  U18    |UART_Tx             |    63|
+|5     |  U20    |Program_counter     |    16|
+|6     |  U23    |Adder_16bit         |     5|
+|7     |  U24    |Instruction_decoder |  3350|
+|8     |  U25    |Program_memory      |   645|
+|9     |  U3     |Data_memory         | 42021|
+|10    |    U1   |Register_file       |   630|
+|11    |    U2   |MMIO                |  1045|
+|12    |      U1 |GPIO                |  1045|
+|13    |    U3   |SRAM                | 40346|
+|14    |  U4     |Control_unit        |    55|
+|15    |  U5     |ALU                 |    25|
++------+---------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:19 ; elapsed = 00:08:36 . Memory (MB): peak = 2365.258 ; gain = 1241.539
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:45 ; elapsed = 00:08:25 . Memory (MB): peak = 2365.258 ; gain = 1241.539
+Synthesis Optimization Complete : Time (s): cpu = 00:06:20 ; elapsed = 00:08:41 . Memory (MB): peak = 2365.258 ; gain = 1241.539
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2365.258 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 10329 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top' is not ideal for floorplanning, since the cellview 'SRAM' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 2365.258 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 329 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 32 instances
+  LD => LDCE: 201 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 96 instances
+
+Synth Design complete, checksum: 9f45a077
+INFO: [Common 17-83] Releasing license: Synthesis
+131 Infos, 118 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:06:45 ; elapsed = 00:09:17 . Memory (MB): peak = 2365.258 ; gain = 1241.539
+# report_utilization -file {top_utilization_synth.rpt}
+# report_qor_suggestions -file {top_rqs_synth.rpt}
+Command: report_qor_suggestions -file top_rqs_synth.rpt
+RQA Time (s): cpu = 00:00:39 ; elapsed = 00:00:38 . Memory (MB): peak = 2365.258 ; gain = 0.000
+report_qor_suggestions completed successfully
+report_qor_suggestions: Time (s): cpu = 00:00:39 ; elapsed = 00:00:38 . Memory (MB): peak = 2365.258 ; gain = 0.000
+# write_qor_suggestions -force -file {top_synth.rqs}
+INFO: [Common 17-1381] The QoR suggestions 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/synthesis/top_synth.rqs' has been generated.
+# write_edf -force {top.edn}
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 2365.258 ; gain = 0.000
+write_edif: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2365.258 ; gain = 0.000
+D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/synthesis/top.edn
+# write_vhdl -force {top.vhd}
+write_vhdl: Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 2365.258 ; gain = 0.000
+# write_xdc -force {top.xdc}
+# write_checkpoint -force top_synth.dcp
+INFO: [Common 17-1381] The checkpoint 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/synthesis/top_synth.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2365.258 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  8 20:14:06 2022...

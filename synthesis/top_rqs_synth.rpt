@@ -1,0 +1,69 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Mon Nov 21 18:30:02 2022
+| Host         : Zjemowit running 64-bit major release  (build 9200)
+| Command      : report_qor_suggestions -file top_rqs_synth.rpt
+| Design       : top
+| Device       : xc7s50
+| Design State : Synthesized
+| ML Models    : v2020.1.0
+------------------------------------------------------------------------------------
+
+Report QoR Suggestions
+
+Table of Contents
+-----------------
+1. QoR Suggestions Report Summary
+2. ML Strategies
+3. QoR Suggestions - Utilization
+4. QoR Suggestions - Timing
+
+1. QoR Suggestions Report Summary
+---------------------------------
+
++-----------------+---------------+-----------+--------------+----------------+-----------+-------------+----------------------+------------------------------------------------------------------------------------------+-------------+
+|       Name      |       Id      |   Status  | Generated At | Applicable For | Automatic |    Scope    | Incremental Friendly |                                        Description                                       |    Source   |
++-----------------+---------------+-----------+--------------+----------------+-----------+-------------+----------------------+------------------------------------------------------------------------------------------+-------------+
+| RQS_UTIL-1-1    | RQS_UTIL-1    | Generated | synth_design | synth_design   | No        | GLOBALSCOPE | No                   | High utilization of certain types of cells. Try to reduce the utilization of those       | Current Run |
+|                 |               |           |              |                |           |             |                      | particular types of cells.                                                               |             |
+| RQS_TIMING-19-1 | RQS_TIMING-19 | Generated | synth_design | synth_design   | Yes       | GLOBALSCOPE | No                   | Retime across high fanout nets to improve timing.                                        | Current Run |
++-----------------+---------------+-----------+--------------+----------------+-----------+-------------+----------------------+------------------------------------------------------------------------------------------+-------------+
+* By default the number of failing paths is limited to 100. Use the -max_paths options to override.
+** The design checks report may change until design is completely implemented/routed
+
+
+2. ML Strategies
+----------------
+
++---+----+---------+---------+
+| # | Id | Command | Options |
++---+----+---------+---------+
+* ML Strategies are available only in default/explore at successfully routed design.
+** The design is not compatible for suggesting strategy, as it was not run using vivado implementation default or vivado implementation explore strategy.
+
+
+3. QoR Suggestions - Utilization
+--------------------------------
+
++--------------+----------------------------------------------------------------------------------------------------------------------------+-----------+--------+
+|     Name     |                                                         Description                                                        | Hierarchy | Module |
++--------------+----------------------------------------------------------------------------------------------------------------------------+-----------+--------+
+| RQS_UTIL-1-1 | Utilization of F7 Muxes is 41% and has exceeded the recommended maximum of 15%. This may have an impact on timing closure. | GLOBAL    | GLOBAL |
++--------------+----------------------------------------------------------------------------------------------------------------------------+-----------+--------+
+
+
+4. QoR Suggestions - Timing
+---------------------------
+
++-----------------+-------------+--------------+--------+-------+-------+-------+--------+----------------+-------+--------+--------------+-------------------+-----------------------------+----------------------+
+|       Name      | No of Paths | Logic Levels | Routes | Slack |  Req. |  Skew | Fanout | Datapath Delay | Cell% | Route% | Source Clock | Destination Clock |          Startpoint         |       Endpoint       |
++-----------------+-------------+--------------+--------+-------+-------+-------+--------+----------------+-------+--------+--------------+-------------------+-----------------------------+----------------------+
+| RQS_TIMING-19-1 | 1           | 19           | 18     | inf   | 0.000 | 0.000 | 1326   | 13.976         | 31.10 | 68.90  |              |                   | U17/s_data_address_reg[3]/C | U5/s_result_reg[5]/D |
+|                 | 1           | 19           | 18     | inf   | 0.000 | 0.000 | 1326   | 14.232         | 30.50 | 69.50  |              |                   | U17/s_data_address_reg[1]/C | U5/s_result_reg[5]/D |
+|                 | 1           | 19           | 18     | inf   | 0.000 | 0.000 | 1326   | 14.462         | 30.00 | 70.00  |              |                   | U17/s_data_address_reg[2]/C | U5/s_result_reg[5]/D |
+|                 | 1           | 19           | 18     | inf   | 0.000 | 0.000 | 1326   | 14.683         | 29.60 | 70.40  |              |                   | U17/s_data_address_reg[0]/C | U5/s_result_reg[5]/D |
+|                 | 1           | 19           | 18     | inf   | 0.000 | 0.000 | 1326   | 14.003         | 31.00 | 69.00  |              |                   | U17/s_data_address_reg[4]/C | U5/s_result_reg[5]/D |
++-----------------+-------------+--------------+--------+-------+-------+-------+--------+----------------+-------+--------+--------------+-------------------+-----------------------------+----------------------+
+
+

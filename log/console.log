@@ -1,0 +1,576 @@
+# Warning: You do not have valid license to open EDIF Netlist files. Contact Aldec for ordering information - sales@aldec.com.
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: The contents of entity 'Register_file' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MMIO' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'SRAM' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MUX2_8bit_read_data' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'Adder_16bit' instantiated in architecture 'top' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Elaboration time 1.4 [s].
+acom -O0 -e 100 -work Soutys8 -2002  $dsn/src/testbench/top_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/testbench/top_tb.vhd
+# Compile Entity "top_tb"
+# Compile Architecture "tb_architecture" of Entity "top_tb"
+# Compile Configuration "TESTBENCH_FOR_TOP"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+SetActiveLib -work
+
+comp -include "$dsn\compile\top.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/compile/top.vhd
+# Compile Entity "top"
+# Compile Architecture "top" of Entity "top"
+# Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]
+comp -include "$dsn\src\testbench\top_tb.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/testbench/top_tb.vhd
+# Compile Entity "top_tb"
+# Compile Architecture "tb_architecture" of Entity "top_tb"
+# Compile Configuration "TESTBENCH_FOR_TOP"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+asim +access +r TESTBENCH_FOR_TOP
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: The contents of entity 'Register_file' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MMIO' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'SRAM' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MUX2_8bit_read_data' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7521 kB (elbread=427 elab2=6948 kernel=145 sdf=0)
+# KERNEL: ASDB file was created in location D:\Programy\ActiveHDL\My_Designs\Soutys8_GitHub\Soutys8\src\wave.asdb
+#  11:22, niedziela, 27 listopada 2022
+#  Simulation has been initialized
+
+wave -noreg CLK_12MHz 
+wave -noreg /top_tb/UUT/U16/out_CLK
+wave -noreg RESET
+wave -noreg UART_data_in
+wave -noreg io_GPIO
+
+run 1000 us
+# VSIM: 5 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/wave.asdb'.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U22,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U23,  Process: line__39.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U25,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U25,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U25,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U25,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U3/U1,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U3/U1,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U3/U2/U1,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U3/U3,  Process: READ_DATA.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U8,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U8,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U8,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U8,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U23,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U22,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: stopped at time: 1 ms
+run 1000 us
+# EXECUTION:: NOTE   : End of simulation
+# EXECUTION:: Time: 1237215 ns,  Iteration: 0,  Instance: /top_tb,  Process: DATA_CHECK.
+# RUNTIME: Info: RUNTIME_0142 top_tb.vhd (126): finish called.
+# KERNEL: Time: 1237215 ns,  Iteration: 0,  Instance: /top_tb,  Process: DATA_CHECK.
+# KERNEL: stopped at time: 1237215 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+run 1000 us
+run 1000 us
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: The contents of entity 'Register_file' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MMIO' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'SRAM' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MUX2_8bit_read_data' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7521 kB (elbread=427 elab2=6948 kernel=145 sdf=0)
+# KERNEL: ASDB file was created in location D:\Programy\ActiveHDL\My_Designs\Soutys8_GitHub\Soutys8\src\wave.asdb
+#  11:23, niedziela, 27 listopada 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/wave.asdb'.
+run 1000 us
+acom -O0 -e 100 -work Soutys8 -2002  $dsn/src/testbench/top_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/testbench/top_tb.vhd
+# Compile Entity "top_tb"
+# Compile Architecture "tb_architecture" of Entity "top_tb"
+# Compile Configuration "TESTBENCH_FOR_TOP"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: The contents of entity 'Register_file' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MMIO' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'SRAM' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MUX2_8bit_read_data' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7521 kB (elbread=427 elab2=6948 kernel=145 sdf=0)
+# KERNEL: ASDB file was created in location D:\Programy\ActiveHDL\My_Designs\Soutys8_GitHub\Soutys8\src\wave.asdb
+#  11:23, niedziela, 27 listopada 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/wave.asdb'.
+run 1000 us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U22,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U23,  Process: line__39.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U25,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U25,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U25,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U25,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U3/U1,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U3/U1,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U3/U2/U1,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U3/U3,  Process: READ_DATA.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U8,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U8,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U8,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U8,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U23,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U22,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: stopped at time: 1 ms
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: The contents of entity 'Register_file' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MMIO' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'SRAM' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MUX2_8bit_read_data' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7521 kB (elbread=427 elab2=6948 kernel=145 sdf=0)
+# KERNEL: ASDB file was created in location D:\Programy\ActiveHDL\My_Designs\Soutys8_GitHub\Soutys8\src\wave.asdb
+#  11:24, niedziela, 27 listopada 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/wave.asdb'.
+run 1000 us
+acom -O0 -e 100 -work Soutys8 -2002  $dsn/src/testbench/top_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/testbench/top_tb.vhd
+# Compile Entity "top_tb"
+# Compile Architecture "tb_architecture" of Entity "top_tb"
+# Compile Configuration "TESTBENCH_FOR_TOP"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: The contents of entity 'Register_file' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MMIO' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'SRAM' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MUX2_8bit_read_data' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7521 kB (elbread=427 elab2=6948 kernel=145 sdf=0)
+# KERNEL: ASDB file was created in location D:\Programy\ActiveHDL\My_Designs\Soutys8_GitHub\Soutys8\src\wave.asdb
+#  11:24, niedziela, 27 listopada 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/wave.asdb'.
+run 1000 us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U22,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U23,  Process: line__39.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U25,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U25,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U25,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U25,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U3/U1,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U3/U1,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U3/U2/U1,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U3/U3,  Process: READ_DATA.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U8,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U8,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U8,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U8,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U23,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U22,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: stopped at time: 1 ms
+run 1000 us
+# EXECUTION:: NOTE   : End of simulation
+# EXECUTION:: Time: 1237215 ns,  Iteration: 0,  Instance: /top_tb,  Process: DATA_CHECK.
+# RUNTIME: Info: RUNTIME_0142 top_tb.vhd (126): finish called.
+# KERNEL: Time: 1237215 ns,  Iteration: 0,  Instance: /top_tb,  Process: DATA_CHECK.
+# KERNEL: stopped at time: 1237215 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: The contents of entity 'Register_file' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MMIO' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'SRAM' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MUX2_8bit_read_data' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7521 kB (elbread=427 elab2=6948 kernel=145 sdf=0)
+# KERNEL: ASDB file was created in location D:\Programy\ActiveHDL\My_Designs\Soutys8_GitHub\Soutys8\src\wave.asdb
+#  11:25, niedziela, 27 listopada 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/wave.asdb'.
+run 1000 us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U22,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U23,  Process: line__39.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U25,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U25,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U25,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U25,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U3/U1,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U3/U1,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U3/U2/U1,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U3/U3,  Process: READ_DATA.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U8,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U8,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U8,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U8,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U23,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U22,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: stopped at time: 1 ms
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+# VSIM: 1 object(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: The contents of entity 'Register_file' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MMIO' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'SRAM' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Warning: The contents of entity 'MUX2_8bit_read_data' instantiated in architecture 'Data_memory' differ from the contents available during the compilation of this architecture.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 7521 kB (elbread=427 elab2=6948 kernel=145 sdf=0)
+# KERNEL: ASDB file was created in location D:\Programy\ActiveHDL\My_Designs\Soutys8_GitHub\Soutys8\src\wave.asdb
+#  11:27, niedziela, 27 listopada 2022
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'D:/Programy/ActiveHDL/My_Designs/Soutys8_GitHub/Soutys8/src/wave.asdb'.
+run 1000 us
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U22,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U23,  Process: line__39.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U25,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U25,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U25,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U25,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U3/U1,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U3/U1,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U3/U2/U1,  Process: READ_DATA.
+# KERNEL: WARNING: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U3/U3,  Process: READ_DATA.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U8,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U8,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U8,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U8,  Process: line__45.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U23,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /top_tb/UUT/U22,  Process: line__39.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 2,  Instance: /top_tb/UUT/U5,  Process: line__200.
+# KERNEL: stopped at time: 1 ms
+# KERNEL: Warning: KERNEL_0291 Object "/top_tb/UUT/U3/U2/U1/s_ddrB" has already been traced.
+# VSIM: 0 object(s) traced.
