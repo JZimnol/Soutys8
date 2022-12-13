@@ -1,4 +1,4 @@
-Active-HDL 13.0.376.8320 2022-11-27 11:27:48
+Active-HDL 13.0.376.8320 2022-12-13 21:31:42
 
 Elaboration top modules:
 VHDL Configuration            testbench_for_top
@@ -61,3 +61,9 @@ ieee                                      | Standard IEEE packages library
 soutys8                                   | None
 std                                       | Standard VHDL library
 -------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+testbench_for_top testbench_for_top
+
+
+The performance of simulation is reduced. Version Student Edition

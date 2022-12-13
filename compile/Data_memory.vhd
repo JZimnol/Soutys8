@@ -80,8 +80,8 @@ end component;
 
 ---- Signal declarations used on the diagram ----
 
-signal BUS498 : STD_LOGIC_VECTOR(7 downto 0);
-signal BUS502 : STD_LOGIC_VECTOR(7 downto 0);
+signal s_mmio_data_read : STD_LOGIC_VECTOR(7 downto 0);
+signal s_sram_data_read : STD_LOGIC_VECTOR(7 downto 0);
 
 begin
 
@@ -103,7 +103,7 @@ U1 : Register_file
 U2 : MMIO
   port map(
        io_GPIO => io_GPIO,
-       out_read_data => BUS498,
+       out_read_data => s_mmio_data_read,
        in_control => in_control(CONTROL_BUS_WIDTH-1 downto 0),
        in_write_data => in_write_data,
        in_write_address => in_write_addres,
@@ -118,13 +118,13 @@ U3 : SRAM
        in_reset => in_reset,
        in_address => in_write_addres,
        in_write_data => in_write_data,
-       out_read_data => BUS502
+       out_read_data => s_sram_data_read
   );
 
 U5 : MUX2_8bit_read_data
   port map(
-       in_input1 => BUS498,
-       in_input2 => BUS502,
+       in_input1 => s_mmio_data_read,
+       in_input2 => s_sram_data_read,
        out_output => out_read_data,
        in_control => in_control(CONTROL_BUS_WIDTH - 1 downto 0)
   );

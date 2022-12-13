@@ -2,7 +2,7 @@ SCHM0106
 
 HEADER
 {
- FREEID 1785
+ FREEID 1802
  VARIABLES
  {
   #ARCHITECTURE="Data_memory"
@@ -249,8 +249,8 @@ HEADER
 "library IEEE;\n"+
 "use IEEE.std_logic_1164.all;"
     #LANGUAGE="VHDL"
-    #MODIFIED="1665595209"
-    #MODIFIED_USEC="796675"
+    #MODIFIED="1665595228"
+    #MODIFIED_USEC="789276"
     #NAME="MUX2_8bit_read_data"
     #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="5732bf42-85ba-4725-9b82-efcc13945b24"
    }
@@ -274,7 +274,7 @@ HEADER
     TEXT  13, 0, 0
     {
      TEXT "in_1"
-     RECT (-40,40,7,69)
+     RECT (-40,0,7,29)
      MARGINS (1,1)
      COLOR (0,0,0)
      FONT (10,0,0,400,0,1,0,"Arial")
@@ -282,7 +282,7 @@ HEADER
     TEXT  14, 0, 0
     {
      TEXT "in_2"
-     RECT (-40,120,7,149)
+     RECT (-40,80,7,109)
      MARGINS (1,1)
      COLOR (0,0,0)
      FONT (10,0,0,400,0,1,0,"Arial")
@@ -1750,7 +1750,7 @@ PAGE ""
  
  BODY
  {
-  TEXT  1768, 0, 0
+  TEXT  1785, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -1760,7 +1760,7 @@ PAGE ""
    MARGINS (1,10)
    FONT (12,0,0,700,0,1,0,"Arial")
   }
-  TEXT  1769, 0, 0
+  TEXT  1786, 0, 0
   {
    PAGEALIGN 10
    TEXT "$CREATIONDATE"
@@ -1770,7 +1770,7 @@ PAGE ""
    FONT (12,0,0,700,0,1,0,"Arial")
    UPDATE 0
   }
-  TEXT  1770, 0, 0
+  TEXT  1787, 0, 0
   {
    PAGEALIGN 10
    TEXT "Title:"
@@ -1779,7 +1779,7 @@ PAGE ""
    MARGINS (1,10)
    FONT (12,0,0,700,0,1,0,"Arial")
   }
-  TEXT  1771, 0, 0
+  TEXT  1788, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -1790,7 +1790,7 @@ PAGE ""
    FONT (12,0,0,700,0,1,0,"Arial")
    UPDATE 0
   }
-  TEXT  1772, 0, 0
+  TEXT  1789, 0, 0
   {
    PAGEALIGN 10
    TEXT 
@@ -1802,7 +1802,7 @@ PAGE ""
    FONT (12,0,0,700,0,1,0,"Arial")
    MULTILINE
   }
-  TEXT  1773, 0, 0
+  TEXT  1790, 0, 0
   {
    PAGEALIGN 10
    TEXT "Page:"
@@ -1811,7 +1811,7 @@ PAGE ""
    MARGINS (1,10)
    FONT (12,0,0,700,0,1,0,"Arial")
   }
-  TEXT  1774, 0, 0
+  TEXT  1791, 0, 0
   {
    PAGEALIGN 10
    OUTLINE 5,1, (0,0,0)
@@ -1822,7 +1822,7 @@ PAGE ""
    FONT (12,0,0,700,0,1,0,"Arial")
    UPDATE 0
   }
-  TEXT  1775, 0, 0
+  TEXT  1792, 0, 0
   {
    PAGEALIGN 10
    TEXT "Revision:"
@@ -1831,7 +1831,7 @@ PAGE ""
    MARGINS (1,10)
    FONT (12,0,0,700,0,1,0,"Arial")
   }
-  TEXT  1776, 0, 0
+  TEXT  1793, 0, 0
   {
    PAGEALIGN 10
    TEXT "$Revision"
@@ -1841,7 +1841,7 @@ PAGE ""
    FONT (12,0,0,700,0,1,0,"Arial")
    UPDATE 0
   }
-  GROUP  1777, 0, 0
+  GROUP  1794, 0, 0
   {
    PAGEALIGN 10
    RECT (1320,1920,2201,2301)
@@ -1853,7 +1853,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1778, 0, 0
+  GROUP  1795, 0, 0
   {
    PAGEALIGN 10
    RECT (1320,2120,2201,2121)
@@ -1865,7 +1865,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1779, 0, 0
+  GROUP  1796, 0, 0
   {
    PAGEALIGN 10
    RECT (1320,2060,2201,2061)
@@ -1877,7 +1877,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1780, 0, 0
+  GROUP  1797, 0, 0
   {
    PAGEALIGN 10
    RECT (1320,2180,2201,2181)
@@ -1889,7 +1889,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1781, 0, 0
+  GROUP  1798, 0, 0
   {
    PAGEALIGN 10
    RECT (1320,2240,2201,2241)
@@ -1901,7 +1901,7 @@ PAGE ""
     FILL (1,(0,0,0),0)
    }
   }
-  GROUP  1782, 0, 0
+  GROUP  1799, 0, 0
   {
    PAGEALIGN 10
    RECT (1500,1920,1501,2061)
@@ -1912,7 +1912,7 @@ PAGE ""
     POINTS ( (0,0), (0,140) )
    }
   }
-  GROUP  1783, 0, 0
+  GROUP  1800, 0, 0
   {
    PAGEALIGN 10
    RECT (1500,2060,1501,2301)
@@ -1923,7 +1923,7 @@ PAGE ""
     POINTS ( (0,0), (0,240) )
    }
   }
-  BMPPICT  1784, 0, 0
+  BMPPICT  1801, 0, 0
   {
    PAGEALIGN 10
    RECT (1340,1980,1479,2025)

@@ -1,4 +1,4 @@
-508
+548
 ~E 1 "../src/Adder_16bit.vhd" 24 Adder_16bit
 ~A 1 "../src/Adder_16bit.vhd" 36 Adder_16bit
 ~A 1 "../synthesis/top.vhd" 380 structure
