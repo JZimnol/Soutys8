@@ -1,4 +1,4 @@
-30
+31
 ~E 1 "../synthesis/top.vhd" 352 Adder_16bit
 ~A 1 "../synthesis/top.vhd" 369 STRUCTURE
 ~E 1 "../synthesis/top.vhd" 16 ALU

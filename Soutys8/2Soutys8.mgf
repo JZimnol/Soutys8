@@ -1,4 +1,4 @@
-V 000043 40 1958 1665422773637 adder_16bit
+I 000043 40 1958 1665422773637 adder_16bit
 <?xml version="1.0"?>
 <symbol name="Adder_16bit">
 <shape guid="0ea37de2-b4b1-414b-abdc-5660873248f8" default="1">
@@ -4306,6 +4306,132 @@ PAGE ""
  
 }
 
+
+]]>
+</shape>
+</symbol>
+
+
+V 000043 40 1927 1671204047394 adder_16bit
+<?xml version="1.0"?>
+<symbol name="Adder_16bit">
+<shape guid="0ea37de2-b4b1-414b-abdc-5660873248f8" default="1">
+<![CDATA[SYMB0100
+HEADER
+{
+ VARIABLES
+ {
+  #CUSTOM_NAME=""
+  #HDL_ENTRIES=
+"library IEEE;\n"+
+"use IEEE.std_logic_1164.all;"
+  #LANGUAGE="VHDL"
+  #MODIFIED="1665422773"
+  #MODIFIED_USEC="615475"
+  #NAME="Adder_16bit"
+  #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER="0ea37de2-b4b1-414b-abdc-5660873248f8"
+ }
+}
+PAGE "" 
+{
+ PAGEHEADER
+ {
+  RECT (0,0,160,120)
+  FREEID 16
+ }
+ 
+ BODY
+ {
+  GROUP  10, -1, 0
+  {
+   RECT (20,0,140,120)
+   VARIABLES
+   {
+    #NAME="ALU"
+    #OUTLINE_FILLING="1"
+   }
+   FREEID 2
+   LINE  1, 0, 0
+   {
+    OUTLINE 0,2, (183,28,28)
+    POINTS ( (120,0), (0,40), (0,80), (120,120), (120,80), (60,60), (120,40), (120,0) )
+    FILL (0,(255,249,196),0)
+   }
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "in_1"
+   RECT (140,20,187,49)
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (10,0,0,400,0,1,0,"Arial")
+  }
+  TEXT  12, 0, 0
+  {
+   TEXT "in_2"
+   RECT (140,100,187,129)
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (10,0,0,400,0,1,0,"Arial")
+  }
+  TEXT  13, 0, 0
+  {
+   TEXT "out"
+   RECT (-20,20,16,49)
+   MARGINS (1,1)
+   COLOR (0,0,0)
+   FONT (10,0,0,400,0,1,0,"Arial")
+  }
+  PIN  2, 0, 0
+  {
+   COORD (160,20)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="in_input1(15:0)"
+    #SIDE="right"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+  PIN  4, 0, 0
+  {
+   COORD (160,100)
+   VARIABLES
+   {
+    #DIRECTION="IN"
+    #LENGTH="20"
+    #NAME="in_input2(15:0)"
+    #SIDE="right"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (0,0), (-20,0) )
+   }
+  }
+  PIN  6, 0, 0
+  {
+   COORD (0,60)
+   VARIABLES
+   {
+    #DIRECTION="OUT"
+    #LENGTH="20"
+    #NAME="out_output(15:0)"
+    #SIDE="left"
+    #VHDL_TYPE="STD_LOGIC_VECTOR"
+   }
+   LINE  1, 0, 0
+   {
+    POINTS ( (0,0), (20,0) )
+   }
+  }
+ }
+}
 
 ]]>
 </shape>

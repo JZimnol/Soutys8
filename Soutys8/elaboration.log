@@ -1,4 +1,4 @@
-Active-HDL 13.0.376.8320 2022-12-13 21:31:42
+Active-HDL 13.0.376.8320 2022-12-16 17:59:32
 
 Elaboration top modules:
 VHDL Configuration            testbench_for_top
@@ -63,7 +63,7 @@ std                                       | Standard VHDL library
 -------------------------------------------------------------------------------------------------------------
 
 
-Simulation Options: asim -O5 +access +r +m+testbench_for_top testbench_for_top
+Simulation Options: asim +access +r TESTBENCH_FOR_TOP
 
 
 The performance of simulation is reduced. Version Student Edition
