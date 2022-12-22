@@ -159,7 +159,7 @@ package softprocessor_constants is
 
     constant UART_BAUDRATE    : integer := 9600;
     constant UART_DATA_LENGTH : integer := 8;
-    constant UART_CLK_PER_BIT : integer := 6;--integer(MAIN_CLOCK_FREQUENCY/UART_BAUDRATE);
+    constant UART_CLK_PER_BIT : integer := integer(MAIN_CLOCK_FREQUENCY/UART_BAUDRATE);
 
     constant PROG_MEM_MAX_NUMBER_OF_INSTRUCTIONS : integer := 512;
 end package;
