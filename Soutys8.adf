@@ -276,11 +276,6 @@ testbench/Register_file_tb_runtest.do=-1
 testbench/UART_Rx_tb.vhd=-1
 testbench/UART_Rx_tb_runtest.do=-1
 constraints/Arty-S7-50-Master.xdc=-1
-post-synthesis/..\..\synthesis\top.edn=-1
-post-synthesis/..\..\synthesis\top.vhd=-1
-timing/..\..\implement\top.v=-1
-timing/..\..\implement\top.sdf=-1
-timing/..\..\implement\glbl.v=-1
 [Files.Data]
 .\src\softprocessor_constants.vhd=VHDL Source Code
 .\src\ALU.vhd=VHDL Source Code
@@ -341,8 +336,6 @@ OUT_CONSTRAINT=
 REPORT=
 [SIM.POST]
 TOPLEVEL=top
-[sdf.c.testbench_for_top]
-0=implement\top.sdf| /top_tb/UUT, Average, No
 [SIM.TIME]
 TOPLEVEL=top glbl
 SDF_PATH=implement\top.sdf
@@ -355,5 +348,3 @@ Selected=
 [Groups]
 testbench=1
 constraints=1
-post-synthesis=1
-timing=1

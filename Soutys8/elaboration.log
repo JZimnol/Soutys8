@@ -1,69 +1,9 @@
-Active-HDL 13.0.376.8320 2022-12-13 21:31:42
+Active-HDL 15.0.261.9132 2025-03-21 19:36:55
 
 Elaboration top modules:
-VHDL Configuration            testbench_for_top
 
 
--------------------------------------------------------------------------------------------------------------
-Entity              | Architecture        | Library | Info | Compiler Version          | Compilation Options
--------------------------------------------------------------------------------------------------------------
-top_tb              | tb_architecture     | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-top                 | top                 | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-MUX2_16bit_branch   | MUX2_16bit_branch   | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-constant_values     | constant_values     | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-Clock_prescaler     | Clock_prescaler     | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-UART_Rx             | UART_Rx             | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-UART_Tx             | UART_Tx             | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-MUX2_16bit_addr     | MUX2_16bit_addr     | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-Program_counter     | Program_counter     | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-MUX2_16bit_PC       | MUX2_16bit_PC       | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-Adder_16bit         | Adder_16bit         | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-Instruction_decoder | Instruction_decoder | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-Program_memory      | Program_memory      | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-Data_memory         | Data_memory         | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-Control_unit        | Control_unit        | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-ALU                 | ALU                 | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-MUX2_8bit_src2      | MUX2_8bit_src2      | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-MUX2_8bit_src1      | MUX2_8bit_src1      | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-MUX4_8bit           | MUX4_8bit           | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-Reset_LED           | Reset_LED           | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-Register_file       | Register_file       | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-MMIO                | MMIO                | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-SRAM                | SRAM                | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-MUX2_8bit_read_data | MUX2_8bit_read_data | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-GPIO                | GPIO                | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
--------------------------------------------------------------------------------------------------------------
-
--------------------------------------------------------------------------------------------------------------
-VHDL Configuration                        | Library | Info | Compiler Version          | Compilation Options
--------------------------------------------------------------------------------------------------------------
-testbench_for_top                         | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
--------------------------------------------------------------------------------------------------------------
-
--------------------------------------------------------------------------------------------------------------
-VHDL Package                              | Library | Info | Compiler Version          | Compilation Options
--------------------------------------------------------------------------------------------------------------
-standard                                  | std     |      |                           | <unavailable>
-TEXTIO                                    | std     |      | 13.0.376.8320 (Windows64) |  -2019
-std_logic_1164                            | ieee    |      | 13.0.376.8320 (Windows64) |  -2008
-NUMERIC_STD                               | ieee    |      | 13.0.376.8320 (Windows64) |  -2008
-softprocessor_constants                   | soutys8 |      | 13.0.376.8320 (Windows64) | -O0
-ENV                                       | std     |      | 13.0.376.8320 (Windows64) |  -2019
-std_logic_arith                           | ieee    |      | 13.0.376.8320 (Windows64) | <unavailable>
-STD_LOGIC_UNSIGNED                        | ieee    |      | 13.0.376.8320 (Windows64) | <unavailable>
-MATH_REAL                                 | ieee    |      | 13.0.376.8320 (Windows64) | <unavailable>
--------------------------------------------------------------------------------------------------------------
-
--------------------------------------------------------------------------------------------------------------
-Library                                   | Comment
--------------------------------------------------------------------------------------------------------------
-ieee                                      | Standard IEEE packages library
-soutys8                                   | None
-std                                       | Standard VHDL library
--------------------------------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +access +r +m+testbench_for_top testbench_for_top
-
-
-The performance of simulation is reduced. Version Student Edition
+----------------------------------------------------------------------------------
+Library                 | Comment
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------

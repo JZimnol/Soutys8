@@ -30,6 +30,3 @@
 .\src\testbench\Program_counter_tb.vhd
 .\src\testbench\Register_file_tb.vhd
 .\src\testbench\UART_Rx_tb.vhd
-.\synthesis\top.vhd
-.\implement\top.v
-.\implement\glbl.v
