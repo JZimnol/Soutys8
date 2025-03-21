@@ -70,8 +70,6 @@ begin
     WRITE_PUSH_POP_DATA: process(in_clk) begin
         if in_clk'event and in_clk='1' then
             if in_reset = '1' then
-                -- set RAM values to zeros
-                SRAM <= (others=>(others => '0'));
                 s_stack_pointer <= SRAM_HIGHEST_ADDRESS;
             elsif s_write_enable = '1' then
                 -- write data to RAM

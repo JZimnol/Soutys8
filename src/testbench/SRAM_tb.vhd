@@ -122,10 +122,18 @@ begin
         wait for 2*CLOCK_CYCLE;
         in_reset <= '0';
         wait until in_clk'event and in_clk = '1';
-        for i in 0 to SRAM_MEMORY_SIZE - 1 loop
-            in_address <= std_logic_vector(to_unsigned(i + SRAM_LOWEST_ADDRESS, in_address'length));
+        for i in 0 to 5 loop
+            in_control(CONTROL_SRAM_WRITE_ENABLE) <= '0';
+            in_control(CONTROL_SRAM_PUSH_ENABLE) <= '1';
+            in_control(CONTROL_SRAM_POP_ENABLE) <= '0';
+            in_address <= x"0105";
+            in_write_data <= std_logic_vector(to_unsigned(i + 123, in_write_data'length));
+            wait until in_clk'event and in_clk = '1';
+        end loop;
+        for i in 0 to 5 loop
+            in_address <= std_logic_vector(to_unsigned(SRAM_HIGHEST_ADDRESS - i, in_address'length));
             wait for 0.1 ns;
-            CHECK_VALUE(out_read_data, 0);
+            CHECK_VALUE(out_read_data, i + 123);
         end loop;
 
         -- check writing to SRAM mechanism
