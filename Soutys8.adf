@@ -275,6 +275,8 @@ testbench/Register_file_tb.vhd=-1
 testbench/Register_file_tb_runtest.do=-1
 testbench/UART_Rx_tb.vhd=-1
 testbench/UART_Rx_tb_runtest.do=-1
+testbench/Instruction_decoder_tb.vhd=-1
+testbench/Instruction_decoder_tb_runtest.do=-1
 constraints/Arty-S7-50-Master.xdc=-1
 [Files.Data]
 .\src\softprocessor_constants.vhd=VHDL Source Code
@@ -316,12 +318,9 @@ constraints/Arty-S7-50-Master.xdc=-1
 .\src\testbench\Register_file_tb_runtest.do=Macro
 .\src\testbench\UART_Rx_tb.vhd=VHDL Source Code
 .\src\testbench\UART_Rx_tb_runtest.do=Macro
+.\src\testbench\Instruction_decoder_tb.vhd=VHDL Source Code
+.\src\testbench\Instruction_decoder_tb_runtest.do=Macro
 .\src\constraints\Arty-S7-50-Master.xdc=External File
-.\synthesis\top.edn=EDIF Netlist
-.\synthesis\top.vhd=VHDL Source Code
-.\implement\top.v=VERILOG SOURCE CODE
-.\implement\top.sdf=SDF FILE
-.\implement\glbl.v=VERILOG SOURCE CODE
 [file_out:/MMIO.bde]
 /..\compile\MMIO.vhd=-1
 [file_out:/Data_memory.bde]
