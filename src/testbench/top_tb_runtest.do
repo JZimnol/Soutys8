@@ -10,4 +10,4 @@ wave -noreg RESET
 wave -noreg UART_data_in
 wave -noreg io_GPIO
 
-run 1000 us
+run 50 ms
