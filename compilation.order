@@ -3,7 +3,6 @@
 .\src\Clock_prescaler.vhd
 .\src\constant_values.vhd
 .\src\Control_unit.vhd
-.\src\Data_memory.bde
 .\src\GPIO.vhd
 .\src\Instruction_decoder.vhd
 .\src\MMIO.bde
@@ -19,6 +18,7 @@
 .\src\Register_file.vhd
 .\src\Reset_LED.vhd
 .\src\SRAM.vhd
+.\src\Data_memory.bde
 .\src\UART_Rx.vhd
 .\src\UART_Tx.vhd
 .\src\top.bde
