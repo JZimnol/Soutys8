@@ -298,14 +298,14 @@ begin
             s_immediate        <= "00000001";
             s_sram_address     <= s_sram_address;
             s_branch_address   <= "0000000000000000";
-        elsif std_match(s_main_instruction, "001001----------") then
+        elsif std_match(s_main_instruction, "????????????????") then
             -- EOR - Exclusive OR
             --     Operation: Rd <-- Rd exor Rr
             --     Opcode:    0010 01rd dddd rrrr
             s_instruction_type <= INSTR_TYPE_EOR;
-            s_reg1_addr        <= s_main_instruction(8 downto 4);
-            s_reg2_addr        <= s_main_instruction(9) & s_main_instruction(3 downto 0);
-            s_reg3_addr        <= s_main_instruction(8 downto 4);
+            s_reg1_addr        <= ????; -- Rd
+            s_reg2_addr        <= ????;	-- Rr
+            s_reg3_addr        <= ????;	-- Rd
             s_immediate        <= s_immediate;
             s_sram_address     <= s_sram_address;
             s_branch_address   <= "0000000000000000";
