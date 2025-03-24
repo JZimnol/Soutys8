@@ -120,7 +120,15 @@ begin
         RESET <= '1';
         wait for 3*CLOCK_CYCLE;
         RESET <= '0';
-        wait for 1000 us;
+        wait for 16035 ns;
+
+        for i in 0 to 100 loop
+            assert (i = io_GPIO)
+                report "io_GPIO ERROR: expected " & integer'image(i) & ", got " &
+                        integer'image(to_integer(unsigned(io_GPIO)))
+                severity Error;
+            wait for 10 us;
+        end loop;
 
         report("End of simulation");
         finish;
