@@ -50,7 +50,7 @@ def printProgressBar (iteration, total, prefix = 'Flashing progress:', suffix = 
         print()
 
 
-def characterize_line(line: str) -> tuple[int, int, int, str]:
+def characterize_line(line):
     """
     Parse .hex file line and split it into a byte count, starting adddres, record type and data.
     More info: https://scienceprog.com/shelling-the-intel-8-bit-hex-file-format/
@@ -68,7 +68,7 @@ def characterize_line(line: str) -> tuple[int, int, int, str]:
     return byte_count, address, record_type, data
 
 
-def remove_checksum(file_data: list[str]) -> list[str]:
+def remove_checksum(file_data):
     """
     Removes newline characters and checksums from given .hex file.
     @params:
@@ -81,7 +81,7 @@ def remove_checksum(file_data: list[str]) -> list[str]:
     return ret_file_data
 
 
-def file_content_check(file_data: list[str]):
+def file_content_check(file_data):
     """
     Check if input file has proper .hex file format.
     @params:
